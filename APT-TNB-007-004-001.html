@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<!-- 690*1200 -->
+<body class="popup">
+	<h2><span class="title">자원등록</span></h2>
+    <!-- 전체 영역 -->
+	<div class="popupcontents">
+        <div class="contents board">
+            <h6 class="pop_subTitle first">자원정보</h6>
+            <!-- table -->
+            <table class="list" >  
+                <caption>게시판쓰기</caption>
+                <colgroup>
+                    <col style="width:20%" />
+                    <col style="width:80%" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title">자원번호</span></th>
+                        <td class="L td_line" >-</td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title import">자원분류</span></th>
+                        <td class="L td_line" >
+                      	  <div class="inputbox sel_100per">
+                          	<p class="txt"></p>
+                            <select name="a">
+                                <option value="">선택하세요</option>
+                                <option value="">선택하세요</option>
+                                <option value="">선택하세요</option>
+                                <option value="">선택하세요</option>
+                                <option value="">선택하세요</option>
+                            </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line" ><span class="table_title import">자원명</span></th>
+                        <td class="L td_line"><label for="txt_01"></label><input type="text" class="txt_100per" id="txt_01" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table//-->
+            <h6 class="pop_subTitle">관리자정보</h6>   
+            <!-- table -->
+            <table class="list" >  
+                <caption>게시판쓰기</caption>
+                <colgroup>
+                    <col style="width:20%" />
+                    <col style="width:80%" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title import">성명</span></th>
+                        <td class="L td_line"><label for="txt_02"></label><input type="text" class="txt_300" id="txt_02" /><a href="#" class="btn_black"><span>직원검색</span></a></td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title import">부서</span></th>
+                        <td class="L td_line"><label for="txt_03"></label><input type="text" class="txt_100per" id="txt_03" /></td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line" ><span class="table_title import">전화번호</span></th>
+                        <td class="L td_line" ><label for="txt_04"></label><input type="text" class="txt_100per" id="txt_04" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table//-->
+           <h6 class="pop_subTitle">자원사용</h6> 
+            <!-- table -->
+            <table class="list" >  
+                <caption>게시판쓰기</caption>
+                <colgroup>
+                    <col style="width:20%" />
+                    <col style="width:80%" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="C first th_line" ><span class="table_title import">사용유무</span></th>
+                        <td class="L td_line" >
+                           <form class="fl">
+                                <input type="radio" name="usage" id="use" class="first" value="" /><label for="use">사용</label>
+                                <input type="radio" name="usage" id="unused" value="" /><label for="unused">미사용</label>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table//-->
+            <h6 class="pop_subTitle">기타정보</h6>  
+            <!-- table -->
+            <table class="list" >  
+                <caption>게시판쓰기</caption>
+                <colgroup>
+                    <col style="width:20%" />
+                    <col style="width:80%" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title import">위치</span></th>
+                        <td class="L td_line" ><label for="txt_05"></label><input type="text" class="txt_100per" id="txt_05" /></td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title">안내</span></th>
+                        <td class="L td_line">
+                        	<textarea></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title">비고</span></th>
+                        <td class="L td_line">
+                        	<textarea></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table//-->
+        </div>    
+    </div>
+        <!-- 전체 영역 //-->
+        <!-- btnArea -->
+        <div class="btnArea">
+            <a href="#" class="btn_black"><span>저장</span></a>
+            <a href="#" class="btn_white"><span>닫기</span></a>
+        </div>
+        <!-- btnArea //-->
+	<a href="#"><img class="btn_close" src="images/popup/popup_close.png" alt="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+

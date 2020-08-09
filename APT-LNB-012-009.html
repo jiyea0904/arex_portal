@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<table class="list mr0" >  
+		<caption>게시판리스트</caption>
+		<colgroup>
+			<col style="width:15%" />
+			<col style="width:8%" />
+			<col style="width:26%" />
+			<col style="width:26%" />
+			<col style="width:10%" />
+			<col style="width:15%" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th class="C first" rowspan="2"><span class="table_title">구분</span></th>
+				<th class="C thlineL" rowspan="2"><span class="table_title">발령</span></th>
+				<th class="C thlineL thlineR" colspan="2"><span class="table_title">관련내용</span></th>
+				<th class="C" rowspan="2" colspan="2"><span class="table_title">발령기간</span></th>
+			</tr>
+			<tr>
+				<th class="C"><span class="table_title">내부</span></th>
+				<th class="C thlineL"><span class="table_title">외부</span></th>
+			</tr>
+			<tr>
+				<td class="C"><span class="l_title level_1"><em></em>관심단계</span></td>
+				<td class="C tdlineL"><input type="radio" id="level_01" name="level" /><label for="level_01"></label></td>
+				<td class="C tdlineL"><textarea></textarea></td>
+				<td class="C tdlineL"><textarea></textarea></td>
+				<td class="C tdlineL" colspan="2"><input type="text" id="during_01" class="txt_100per" /><label for="during_01"></label></td>
+			</tr>
+			<tr>
+				<td class="C"><span class="l_title level_2"><em></em>주의단계</span></td>
+				<td class="C tdlineL"><input type="radio" id="level_02" name="level" /><label for="level_02"></label></td>
+				<td class="C tdlineL"><textarea></textarea></td>
+				<td class="C tdlineL"><textarea></textarea></td>
+				<td class="C tdlineL"><input type="text" id="start_02" class="txt_100per" /><label for="start_02"></label></td>
+				<td class="C tdlineL"><input type="text" id="end_02" class="txt_100per" /><label for="end_02"></label></td>
+			</tr>
+			<tr>
+				<td class="C"><span class="l_title level_3"><em></em>경계단계</span></td>
+				<td class="C tdlineL"><input type="radio" id="level_03" name="level" /><label for="level_03"></label></td>
+				<td class="C tdlineL"><textarea></textarea></td>
+				<td class="C tdlineL"><textarea></textarea></td>
+				<td class="C tdlineL"><input type="text" id="start_03" class="txt_100per" /><label for="start_03"></label></td>
+				<td class="C tdlineL"><input type="text" id="end_03" class="txt_100per" /><label for="end_03"></label></td>
+			</tr>
+			<tr>
+				<td class="C"><span class="l_title level_4"><em></em>심각단계</span></td>
+				<td class="C tdlineL"><input type="radio" id="level_04" name="level" /><label for="level_04"></label></td>
+				<td class="C tdlineL"><textarea></textarea></td>
+				<td class="C tdlineL"><textarea></textarea></td>
+				<td class="C tdlineL"><input type="text" id="start_04" class="txt_100per" /><label for="start_04"></label></td>
+				<td class="C tdlineL"><input type="text" id="end_04" class="txt_100per" /><label for="end_04"></label></td>
+			</tr>
+			<tr>
+				<td class="L safe_level" colspan="6">
+					<textarea>관심단계 :
+주의단계 :
+경계단계 :
+심각단계 :
+					</textarea>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="btnArea mr20 mrt">
+		<a href="#" class="btn_black"><span>등록</span></a><a href="#" class="btn_white"><span>초기화</span></a>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+

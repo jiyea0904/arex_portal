@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<!-- 1300*665 -->
+<body class="popup">
+	<h2><span class="title">직원 추가/수정</span></h2>
+    <!-- 전체 영역 -->
+	<div class="popupcontents">
+    	<!-- 왼쪽 영역 //-->
+        <div class="leftArea W35">
+			<div class="contents">
+				<h5 class="pop_subTitle first">조직도</h5>
+				<div class="treeArea H770"></div>
+			</div>
+        </div>
+    	<!-- 왼쪽 영역 //-->
+        <div class="rightArea board W65">
+            <div class="contents">
+				<h5 class="pop_subTitle first">사용자 목록</h5>
+                <div class="tsearchArea">
+                    <fieldset class="W100">
+                        <label for="search"></label><input type="text" class="txt_100per" id="search" value="성명을 입력하세요." /><a class="btn_search" href="#"><img src="images/sub/noti_search_icon.png" alt="search" /></a> 
+                    </fieldset>
+                </div>
+                <!-- table-->
+                <table class="list" >  
+                    <caption>게시판리스트</caption>
+                    <colgroup>
+                        <col style="width:8%" />
+                        <col style="width:25%" />
+                        <col style="width:15%" />
+                        <col style="width:15%" />
+                        <col style="width:15%" />
+                        <col style="width:22%" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+							<th class="C first"><span class="table_title"><input type="checkbox" id="all" name="all" /><label for="all"></label></span></th>
+                            <th class="C"><span class="table_title">사번</span></th>
+                            <th class="C"><span class="table_title">성명</span></th>
+                            <th class="C"><span class="table_title">직급</span></th>
+                            <th class="C"><span class="table_title">직위</span></th>
+                            <th class="C"><span class="table_title">부서</span></th>
+                        </tr>
+                    </thead>
+				</table>
+				<div class="scroll H200">
+					<table class="list" >  
+						<caption>게시판리스트</caption>
+						<colgroup>
+							<col style="width:8%" />
+							<col style="width:25%" />
+							<col style="width:15%" />
+							<col style="width:15%" />
+							<col style="width:15%" />
+							<col style="width:22%" />
+						</colgroup>
+						<tbody>   
+							<tr>
+								<td class="C"><input type="checkbox" id="person_01" name="person" /><label for="person_01"></label></td>
+								<td class="C">B01XXXX</td>
+								<td class="C">홍길동</td>
+								<td class="C">팀장</td>
+								<td class="C">차장</td>
+								<td class="C">전산운영팀</td>
+							</tr>
+							<tr>
+								<td class="C"><input type="checkbox" id="person_02" name="person" /><label for="person_02"></label></td>
+								<td class="C">B01XXXX</td>
+								<td class="C">장길산</td>
+								<td class="C">팀원</td>
+								<td class="C">과장</td>
+								<td class="C">전산운영팀</td>
+							</tr>
+							<tr>
+								<td class="C"><input type="checkbox" id="person_03" name="person" /><label for="person_03"></label></td>
+								<td class="C">B01XXXX</td>
+								<td class="C">임꺽정</td>
+								<td class="C">팀원</td>
+								<td class="C">과장</td>
+								<td class="C">전산운영팀</td>
+							</tr>
+							<tr>
+								<td class="C"><input type="checkbox" id="person_04" name="person" /><label for="person_04"></label></td>
+								<td class="C">B01XXXX</td>
+								<td class="C">전우치</td>
+								<td class="C">팀원</td>
+								<td class="C">주임</td>
+								<td class="C">전산운영팀</td>
+							</tr>
+							<tr>
+								<td class="C"><input type="checkbox" id="person_05" name="person" /><label for="person_05"></label></td>
+								<td class="C">B01XXXX</td>
+								<td class="C">홍경래</td>
+								<td class="C">팀원</td>
+								<td class="C">사원</td>
+								<td class="C">전산운영팀</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+                    <!-- table//-->
+					<!-- btnArea -->
+					<div class="btnArea mr20 mrt">
+						<a href="#"><img src="images/sub/btn_arr_up.png" alt="위로이동" /></a><a href="#"><img src="images/sub/btn_arr_down.png" alt="아래로이동" /></a>
+					</div>
+					<!-- btnArea //-->
+					<h5 class="pop_subTitle">선택자 목록</h5>
+					<div class="tsearchArea">
+                    <fieldset class="W100">
+                        <label for="search2"></label><input type="text" class="txt_100per" id="search2" value="그룹명을 입력하세요." /> 
+                    </fieldset>
+					</div>
+					<!-- table-->
+					<table class="list" >  
+						<caption>게시판리스트</caption>
+						<colgroup>
+							<col style="width:8%" />
+							<col style="width:25%" />
+							<col style="width:15%" />
+							<col style="width:15%" />
+							<col style="width:15%" />
+							<col style="width:22%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th class="C first"><span class="table_title"><input type="checkbox" id="all2" name="all" /><label for="all2"></label></span></th>
+								<th class="C"><span class="table_title">사번</span></th>
+								<th class="C"><span class="table_title">성명</span></th>
+								<th class="C"><span class="table_title">직급</span></th>
+								<th class="C"><span class="table_title">직위</span></th>
+								<th class="C"><span class="table_title">부서</span></th>
+							</tr>
+						</thead>
+					</table>
+					<div class="scroll H200">
+						<table class="list" >  
+							<caption>게시판리스트</caption>
+							<colgroup>
+								<col style="width:8%" />
+								<col style="width:25%" />
+								<col style="width:15%" />
+								<col style="width:15%" />
+								<col style="width:15%" />
+								<col style="width:22%" />
+							</colgroup>
+							<tbody>   
+								<tr>
+									<td class="C"><input type="checkbox" id="person_11" name="person" /><label for="person_11"></label></td>
+									<td class="C">B01XXXX</td>
+									<td class="C">홍길동</td>
+									<td class="C">팀장</td>
+									<td class="C">차장</td>
+									<td class="C">전산운영팀</td>
+								</tr>
+								<tr>
+									<td class="C"><input type="checkbox" id="person_12" name="person" /><label for="person_12"></label></td>
+									<td class="C">B01XXXX</td>
+									<td class="C">장길산</td>
+									<td class="C">팀원</td>
+									<td class="C">과장</td>
+									<td class="C">전산운영팀</td>
+								</tr>
+								<tr>
+									<td class="C"><input type="checkbox" id="person_13" name="person" /><label for="person_13"></label></td>
+									<td class="C">B01XXXX</td>
+									<td class="C">임꺽정</td>
+									<td class="C">팀원</td>
+									<td class="C">과장</td>
+									<td class="C">전산운영팀</td>
+								</tr>
+								<tr>
+									<td class="C"><input type="checkbox" id="person_14" name="person" /><label for="person_14"></label></td>
+									<td class="C">B01XXXX</td>
+									<td class="C">전우치</td>
+									<td class="C">팀원</td>
+									<td class="C">주임</td>
+									<td class="C">전산운영팀</td>
+								</tr>
+								<tr>
+									<td class="C"><input type="checkbox" id="person_15" name="person" /><label for="person_15"></label></td>
+									<td class="C">B01XXXX</td>
+									<td class="C">홍경래</td>
+									<td class="C">팀원</td>
+									<td class="C">사원</td>
+									<td class="C">전산운영팀</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+						<!-- table//-->
+				</div>
+            </div>
+        </div>    
+        <!-- 전체 영역 //-->
+        <!-- btnArea -->
+        <div class="btnArea">
+            <a href="#" class="btn_black"><span>등록</span></a>
+            <a href="#" class="btn_white"><span>닫기</span></a>
+        </div>
+        <!-- btnArea //-->
+	<a href="#"><img class="btn_close" src="images/popup/popup_close.png" alt="닫기" title="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+

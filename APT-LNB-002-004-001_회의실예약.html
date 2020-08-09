@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<!-- 1030*740 -->
+<body class="popup">
+	<h2><span class="title">자원예약</span></h2>
+    <!-- 전체 영역 -->
+	<div class="popupcontents">
+        <div class="contents board">
+            <h6 class="pop_subTitle first">자원선택</h6>
+			<div class="W100">
+				<div class="fl W50">
+					<div class="wrap">
+						<div class="scroll H200 pd15 bg_gray">
+							<ul class="list_bullet over">
+								<li class="on"><a href="#"><span>회의실(본사)</span></a></li>
+								<li><a href="#"><span>회의실(용유)</span></a></li>
+								<li><a href="#"><span>배차(본사)</span></a></li>
+								<li><a href="#"><span>배차(용유)</span></a></li>
+								<li><a href="#"><span>배차(기술본부)</span></a></li>
+								<li><a href="#"><span>기타</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="fr W50">
+					<div class="wrap">
+						<div class="scroll H200 pd15 bg_gray">
+							<ul class="list_bullet over">
+								<li class="on"><a href="#"><span>중회의실(4층)</span></a></li>
+								<li><a href="#"><span>대회의실(3층)</span></a></li>
+								<li><a href="#"><span>세미나실(2층)</span></a></li>
+								<li><a href="#"><span>중회의실(1층)</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h6 class="pop_subTitle">예약정보</h6>
+            <table class="list">  
+                <caption>예약정보</caption>
+                 <colgroup>
+                    <col style="width:20%" />
+                    <col style="width:80%" />
+                </colgroup>
+                <tr>
+					<th class="C"><span class="table_title">자원명</span></th>
+                    <td class="L">세미나실(2층) / 회의실(본사)</td>                 
+          	 	</tr>
+				<tr>
+					<th class="C"><span class="table_title">신청자</span></th>
+                    <td class="L">홍길동 / 전산운영팀</td>                 
+          	 	</tr>
+				<tr>
+					<th class="C"><span class="table_title import">시작시간</span></th>
+                    <td class="L">
+						<input type="text" id="start" class="txt_200 date mr10 mrr" value="2018.05.14" /><label for="start"></label>
+						<div class="inputbox sel_80">
+							<p class="txt"></p>
+							<select>
+								<option>00</option>
+							</select>
+						</div>
+						<span class="fl  mr10 mrr">시</span>
+						<div class="inputbox sel_80">
+							<p class="txt"></p>
+							<select>
+								<option>00</option>
+							</select>
+						</div>
+						<span class="fl">분</span>
+					</td>                 
+          	 	</tr>
+				<tr>
+					<th class="C"><span class="table_title import">종료시간</span></th>
+                    <td class="L">
+						<input type="text" id="end" class="txt_200 date mr10 mrr" value="2018.05.14" /><label for="end"></label>
+						<div class="inputbox sel_80">
+							<p class="txt"></p>
+							<select>
+								<option>00</option>
+							</select>
+						</div>
+						<span class="fl  mr10 mrr">시</span>
+						<div class="inputbox sel_80">
+							<p class="txt"></p>
+							<select>
+								<option>00</option>
+							</select>
+						</div>
+						<span class="fl">분</span>
+					</td>                 
+          	 	</tr>
+       		</table>
+            <!-- //table -->   
+            <h6 class="pop_subTitle">회의내용</h6>    
+            <!-- table -->
+            <table class="list" >  
+                <caption>회의내용</caption>
+                <colgroup>
+                    <col style="width:20%" />
+                    <col style="width:80%" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title import">주요내용</span></th>
+                        <td class="L td_line">
+							<textarea></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title">참석자</span></th>
+                        <td class="L td_line">
+							<div class="bg_line fl W70 H100 mr0"></div>
+							<a href="#" class="fr btn_black"><span>공유자선택</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line" ><span class="table_title">파일첨부</span></th>
+                        <td class="L td_line">
+							<div class="addFile">
+								<div class="filelist">
+									<p>용량이 10M byte 이하만 업로드 가능합니다. (0 Byte)</p>
+									<select name="select" multiple="multiple" id="select">
+										<option>업무요청파일(10Byte)</option>
+									</select>
+								</div>
+								<input type="file" name="fileField" title="파일첨부" class="file_input" id="fileField">
+								<div class="leftArea">
+									<a href="#" class="btn_gray"><span>파일추가 +</span></a> <a href="#" class="btn_gray"><span>파일삭제 -</span></a>
+								</div>
+							</div>
+						</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table//-->
+    	</div>
+        </div>    
+        <!-- 전체 영역 //-->
+        <!-- btnArea -->
+        <div class="btnArea">
+            <a href="#" class="btn_black"><span>수정</span></a>
+            <a href="#" class="btn_black"><span>삭제</span></a>
+            <a href="#" class="btn_white"><span>닫기</span></a>
+        </div>
+        <!-- btnArea //-->
+	<a href="#"><img class="btn_close" src="images/popup/popup_close.png" alt="닫기" title="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+

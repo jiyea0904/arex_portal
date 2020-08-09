@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+    <div class="btnArea">
+		<div class="fr"><a class="btn_black" href="#"><span>등록</span></a><a class="btn_black" href="#"><span>목록</span></a></div>
+    </div>
+    <!-- table-->
+    <table class="list mr20 mrt" >  
+        <caption>게시판쓰기</caption>
+        <colgroup>
+            <col style="width:15%">
+            <col style="width:85%">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th class="C first th_line" scope="col"><span class="table_title">제목</span></th>
+                <td class="L td_line"><label for="title"></label><input type="text" class="txt_100per" id="title"></td>
+            </tr>
+            <tr>
+                <th class="C first th_line" scope="col"><span class="table_title">작성자</span></th>
+                <td class="L td_line">홍길동대리</td>
+            </tr>
+            <tr>
+            	<th class="C first th_line" scope="col" ><span class="table_title">게시유형</span></th>
+                <td class="L td_line">
+                   <form class="fl">
+                        <input type="radio" name="notice_radio" id="notice" value="" class="first"><label for="notice">일반공지</label>
+                        <input type="radio" name="notice_radio" id="topnotice" value=""><label for="topnotice">최상위 공지글</label>
+                        <input type="radio" name="notice_radio" id="nonotice" value=""><label for="nonotice">공지글 아님</label>
+				   </form>
+                </td>
+            </tr>
+            <tr>
+            	<th class="C first th_line" scope="col" ><span class="table_title">공지대상</span></th>
+                <td class="L td_line">
+					<form class="fl">
+					    <input type="checkbox" name="noti_target" id="noti_target_01" value="" class="first"><label for="noti_target_01">전사</label>
+                        <input type="checkbox" name="noti_target" id="noti_target_02" value=""><label for="noti_target_02">A사번(임원)</label>
+                        <input type="checkbox" name="noti_target" id="noti_target_03" value=""><label for="noti_target_03">B사번(정규직원)</label>
+                        <input type="checkbox" name="noti_target" id="noti_target_04" value=""><label for="noti_target_04">C사번(외주협력직원)</label>
+                        <input type="checkbox" name="noti_target" id="noti_target_05" value=""><label for="noti_target_05">D사번(파견근무직원)</label>
+					</form>
+                </td>
+            </tr>
+            <tr>
+            	<th class="C first th_line" scope="col" ><span class="table_title">메인게시</span></th>
+                <td class="L td_line">
+                   <form class="fl">
+                        <input type="radio" name="main_answer" id="main_answer_yes" value="" class="first"><label for="main_answer_yes">예</label>
+                        <input type="radio" name="main_answer" id="main_answer_no" value=""><label for="main_answer_no">아니오</label>
+					</form>
+                </td>
+            </tr>
+            <tr>
+                <th class="C first th_line" scope="col" ><span class="table_title">내용</span></th>
+                <td class="L td_line">
+                	<textarea name="conttxt"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th class="C first th_line" scope="col" ><span class="table_title">첨부파일</span></th>
+                <td class="L td_line">
+                    <div class="addFile">
+                        <div class="filelist">
+                            <p>파일은 10개까지 첨부할 수 있으며, 전체 용량은 100Mbyte를 넘을 수 없습니다.</p>
+                            <select name="select" multiple="multiple" id="select">
+                                <option>업무요청파일(10Byte)</option>
+                            </select>
+                        </div>
+                        <input type="file" name="fileField" title="파일첨부" class="file_input" id="fileField">
+                        <div class="leftArea">
+                            <a href="#" class="btn_gray"><span>파일추가 +</span></a> <a href="#" class="btn_gray"><span>파일삭제 -</span></a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table//-->
+    <div class="btnArea mr20 mrt">
+		<div class="fr"><a class="btn_black" href="#"><span>등록</span></a><a class="btn_black" href="#"><span>목록</span></a></div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<form>
+		<!-- tsearchArea -->
+		<div class="tsearchArea">
+			<div class="format">
+				<input type="text" id="date_start" name="date_start" class="date txt_150" value="2018.05.11" /><label for="date_start"></label>
+				<span class="fl">~</span>
+				<input type="text" id="date_end" name="date_end" class="date txt_150" value="2018.05.11" /><label for="date_end"></label>
+			</div>
+			<fieldset>
+				<div class="inputbox">
+					<p class="txt"></p>
+					<select id="search_value_01">
+						<option>전체</option>
+						<option>사번</option>
+						<option>성명</option>
+					</select>
+				</div> 
+				<label for="search"></label><input type="text" id="search" value="검색어를 입력하세요."><a class="btn_search" href="#"><img src="images/sub/noti_search_icon.png" alt="search"></a> 
+			</fieldset>
+			<div class="fr">
+				<a class="btn_white" href="#"><span class="print">인쇄</span></a><a class="btn_black" href="#"><span>엑셀로 저장</span></a>
+			</div>
+		</div>
+		<!-- tsearchArea //-->
+	</form>
+    <!-- table-->
+    <table class="list table_over">  
+        <caption>게시판리스트</caption>
+        <colgroup>
+            <col style="width:20%" />
+            <col style="width:20%" />
+            <col style="width:20%" />
+            <col style="width:25%" />
+            <col style="width:15%" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="C first"><span class="table_title">갱신일자</span></th>
+                <th class="C"><span class="table_title">사번</span></th>
+                <th class="C"><span class="table_title">성명</span></th>
+                <th class="C"><span class="table_title">비밀번호</span></th>
+                <th class="C"><span class="table_title">SMS여부</span></th>
+            </tr>
+        </thead>
+        <tbody>   
+            <tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+            <tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+			<tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+			<tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+			<tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+			<tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+			<tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+			<tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+			<tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+			<tr>
+                <td class="C">2018.01.18</td>
+                <td class="C">B01XXXX</td>
+                <td class="C">홍길동</td>
+                <td class="C">XXXXXXXXXXXX</td>
+                <td class="C">Y</td>
+            </tr>
+		</tbody>
+    </table>
+    <!-- table//-->
+    <!-- tcontrol-->
+    <div class="tcontrol">
+        <!-- paging -->
+        <div class="paging">            	
+            <a class="no_bg" href="#" title="처음페이지"><img src="images/sub/btn_arr_first.png" alt="첫 페이지로 이동" /></a> <a class="no_bg" href="#" title="이전페이지"><img src="images/sub/btn_arr_prev.png" alt="이전 페이지로 이동" /></a> <a href="#" class="first">1</a> <a href="#" class="on">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#">8</a> <a href="#">9</a> <a href="#">10</a> <a class="no_bg" href="#"><img src="images/sub/btn_arr_next.png" alt="다음 페이지로 이동" title="다음페이지"/></a> <a class="no_bg" href="#"><img src="images/sub/btn_arr_last.png" alt="마지막 페이지로 이동" title="마지막페이지"/></a>
+        </div>
+        <!-- paging//-->
+    </div>
+    <!-- tcontrol//-->
+</div>
+</body>
+</html>
+
+
+
+

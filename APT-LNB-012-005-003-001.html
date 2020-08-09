@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<form>
+		<!-- tsearchArea -->
+		<div class="tsearchArea">
+			<div class="format">
+				<input type="text" id="date_start" name="date_start" class="date txt_150" value="2018.05.11" /><label for="date_start"></label>
+				<span class="fl">~</span>
+				<input type="text" id="date_end" name="date_end" class="date txt_150" value="2018.05.11" /><label for="date_end"></label>
+				<a class="btn_search" href="#"><span>검색</span></a> 
+			</div>
+			<div class="fr">
+				<a class="btn_white" href="#"><span class="print">인쇄</span></a>
+			</div>
+		</div>
+		<!-- tsearchArea //-->
+		<!-- 총 게시물 -->
+		<div class="all_board ">
+			<p class="mr10 mrr">총<span>3908</span>건 (<span>11/39</span>)</p>
+			<div class="inputbox sel_100">
+				<p class="txt"></p>
+				<select id="list_order">
+					<option>10건</option>
+					<option>20건</option>
+					<option>30건</option>
+					<option>40건</option>
+					<option>50건</option>
+				</select>
+			</div> 
+		</div>
+		<!-- 총 게시물 //-->
+	</form>
+    <!-- table-->
+    <table class="list mr10 mrt" >  
+        <caption>게시판리스트</caption>
+        <colgroup>
+            <col style="width:10%" />
+            <col style="width:15%" />
+            <col style="width:35%" />
+            <col style="width:10%" />
+            <col style="width:10%" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="C first"><span class="table_title">번호</span></th>
+                <th class="C"><span class="table_title">신청일자</span></th>
+                <th class="C"><span class="table_title">제목</span></th>
+                <th class="C"><span class="table_title">요청건수</span></th>
+                <th class="C"><span class="table_title">상태</span></th>
+            </tr>
+        </thead>
+        <tbody>   
+            <tr>
+                <td class="C">10</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">차량고장으로 인한 지연 운행</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet orange">접수중</span></td>
+            </tr>
+            <tr>
+                <td class="C">9</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">신호장애로 인한 열차지연</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet darkblue">결재요청</span></td>
+            </tr>
+            <tr>
+                <td class="C">8</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">서울역 ATS 고장으로 인한 지연</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet blue">결재중</span></td>
+            </tr>
+            <tr>
+                <td class="C">7</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">차량고장으로 인한 지연 운행</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet orange">접수중</span></td>
+            </tr>
+            <tr>
+                <td class="C">6</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">신호장애로 인한 열차지연</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet darkblue">결재요청</span></td>
+            </tr>
+            <tr>
+                <td class="C">5</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">서울역 ATS 고장으로 인한 지연</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet blue">결재중</span></td>
+            </tr>
+            <tr>
+                <td class="C">4</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">차량고장으로 인한 지연 운행</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet orange">접수중</span></td>
+            </tr>
+            <tr>
+                <td class="C">3</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">신호장애로 인한 열차지연</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet darkblue">결재요청</span></td>
+            </tr>
+            <tr>
+                <td class="C">2</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">조정</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet red">반려</span></td>
+            </tr>
+            <tr>
+                <td class="C">1</td>
+                <td class="C">2018.12.10</td>
+				<td class="L"><a href="#"><span class="title">차량고장으로 인한 지연 운행</span></a></td>
+                <td class="C">100</td>
+				<td class="C"><span class="bullet green">완료</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table//-->
+    <!-- tcontrol-->
+    <div class="tcontrol">
+        <!-- paging -->
+        <div class="paging">            	
+            <a class="no_bg" href="#" title="처음페이지"><img src="images/sub/btn_arr_first.png" alt="첫 페이지로 이동" /></a> <a class="no_bg" href="#" title="이전페이지"><img src="images/sub/btn_arr_prev.png" alt="이전 페이지로 이동" /></a> <a href="#" class="first">1</a> <a href="#" class="on">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#">8</a> <a href="#">9</a> <a href="#">10</a> <a class="no_bg" href="#"><img src="images/sub/btn_arr_next.png" alt="다음 페이지로 이동" title="다음페이지"/></a> <a class="no_bg" href="#"><img src="images/sub/btn_arr_last.png" alt="마지막 페이지로 이동" title="마지막페이지"/></a>
+        </div>
+        <!-- paging//-->
+    </div>
+    <!-- tcontrol//-->
+	<form>
+		<!-- tsearchArea -->
+		<div class="tsearchArea">
+			<div class="format">
+				<input type="text" id="date_start2" name="date_start2" class="date txt_150" value="2018.05.11" /><label for="date_start2"></label>
+				<span class="fl">~</span>
+				<input type="text" id="date_end2" name="date_end2" class="date txt_150" value="2018.05.11" /><label for="date_end2"></label>
+				<a class="btn_search" href="#"><span>검색</span></a> 
+			</div>
+			<div class="fr">
+				<a class="btn_white" href="#"><span class="print">인쇄</span></a>
+			</div>
+		</div>
+		<!-- tsearchArea //-->
+	</form>
+	</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+<script>
+function checkBox() {
+var check_Box = document.getElementsByName("ckbox"); //체크박스 name
+for (j = 0; j < check_Box.length; j++) {
+	var disign = document.getElementById([j+1]); // 보여질내용
+	if(check_Box[j].checked == true ){
+		disign.style.display = "block";
+	}else{
+		check_Box[j].checked = false;
+		disign.style.display = "none";
+	}
+	}
+}
+</script>
+</head>
+<!-- 790*740 -->
+<body class="popup">
+	<h2><span class="title">일정등록</span></h2>
+    <!-- 전체 영역 -->
+	<div class="popupcontents">
+        <div class="contents board">
+            <table class="list">  
+                <caption>일정</caption>
+                 <colgroup>
+                    <col style="width:20%" />
+                    <col style="width:80%" />
+                </colgroup>
+                <tr>
+					<th class="C"><span class="table_title import">제목</span></th>
+					<td class="L"><input type="text" id="title" class="txt_100per" /><label for="title"></label></td>                 
+          	 	</tr>
+				<tr>
+					<th class="C"><span class="table_title">등록자</span></th>
+                    <td class="L">홍길동 / 전산운영팀</td>                 
+          	 	</tr>
+			</table>
+			<table class="list mr20 mrt">  
+                <caption>일정</caption>
+                 <colgroup>
+                    <col style="width:20%" />
+                    <col style="width:80%" />
+                </colgroup>
+				<tr>
+					<th class="C"><span class="table_title import">일자</span></th>
+                    <td class="L">
+						<input type="text" id="start" class="txt_200 date mr10 mrr" value="2018.05.14(수)" /><label for="start"></label>
+						<span class="fl mr10 mrr">~</span>
+						<input type="text" id="end" class="txt_200 date mr10 mrr" value="2018.05.14(수)" /><label for="end"></label>
+					</td>
+				</tr>
+				<tr>
+					<th class="C"><span class="table_title import">시작시간</span></th>
+                    <td class="L">
+						<div class="inputbox sel_80">
+							<p class="txt"></p>
+							<select>
+								<option>00</option>
+							</select>
+						</div>
+						<span class="fl  mr10 mrr">시</span>
+						<div class="inputbox sel_80">
+							<p class="txt"></p>
+							<select>
+								<option>00</option>
+							</select>
+						</div>
+						<span class="fl">분</span>
+					</td>                 
+          	 	</tr>
+				<tr>
+					<th class="C"><span class="table_title import">종료시간</span></th>
+                    <td class="L">
+						<div class="inputbox sel_80">
+							<p class="txt"></p>
+							<select>
+								<option>00</option>
+							</select>
+						</div>
+						<span class="fl  mr10 mrr">시</span>
+						<div class="inputbox sel_80">
+							<p class="txt"></p>
+							<select>
+								<option>00</option>
+							</select>
+						</div>
+						<span class="fl">분</span>
+					</td>                 
+          	 	</tr>
+				<tr>
+					<th class="C"><span class="table_title">반복설정</span></th>
+                    <td class="L">
+						<form class="fl">
+							<input type="radio" id="ckbox1" name="ckbox" onClick="checkBox()" checked /><label for="ckbox1">한번만</label>
+							<input type="radio" id="ckbox2" name="ckbox" onClick="checkBox()" /><label for="ckbox2">주단위</label>
+							<input type="radio" id="ckbox3" name="ckbox" onClick="checkBox()" /><label for="ckbox3">월단위</label>
+						</form>
+						<div id="ck_content" class="pd10">
+							<div id="1"><p>일정을 반복하지 않습니다.</p></div>
+							<div id="2" style="display:none;">
+								<input type="text" id="weekly" class="txt_60" /><label for="weekly"></label><span class="">주간 매주</span>
+								<form>
+									<input type="checkbox" id="sun" name="date" /><label for="sun">일</label>
+									<input type="checkbox" id="mon" name="date" /><label for="mon">월</label>
+									<input type="checkbox" id="tue" name="date" /><label for="tue">화</label>
+									<input type="checkbox" id="wed" name="date" /><label for="wed">수</label>
+									<input type="checkbox" id="thr" name="date" /><label for="thr">목</label>
+									<input type="checkbox" id="fri" name="date" /><label for="fri">금</label>
+									<input type="checkbox" id="sat" name="date" /><label for="sat">토</label>
+								</form>
+							</div>
+							<div id="3" style="display:none;">
+								<input type="text" id="monthly" class="txt_60" /><label for="monthly"></label><span class="fl mr10 mrr">개월간 매월</span>
+								<div class="inputbox sel_60">
+									<p class="txt"></p>
+									<select>
+										<option>01</option>
+									</select>
+								</div>
+								<span class="fl">일</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+       		</table>
+            <!-- //table -->   
+            <!-- table -->
+            <table class="list mr20 mrt" >  
+                <caption>회의내용</caption>
+                <colgroup>
+                    <col style="width:20%" />
+                    <col style="width:80%" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title">장소</span></th>
+                        <td class="L td_line"><input type="text" id="place" class="txt_100per" /><label for="place"></label></td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title">내용</span></th>
+                        <td class="L td_line">
+							<textarea></textarea>
+						</td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line"><span class="table_title">일정공유</span></th>
+                        <td class="L td_line">
+							<a href="#" class="btn_black"><span>공유자선택</span></a>
+							<ul class="personlist_delete fl">
+								<li>홍길동(팀장)</li>
+								<li>임꺽정(팀원)</li>
+								<li>장길산(팀원)</li>
+								<li>전우치(팀원)</li>
+								<li>홍경래(팀원)</li>
+							</ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="C first th_line" ><span class="table_title">파일첨부</span></th>
+                        <td class="L td_line">
+							<div class="addFile">
+								<div class="file_button"><input type="file" name="fileField" title="파일첨부" class="file_input button" id="fileField"></div>
+								<div class="filelist">
+									<p>용량이 10M byte 이하만 업로드 가능합니다. (0 Byte)</p>
+									<select name="select" multiple="multiple" id="select">
+										<option>업무요청파일(10Byte)</option>
+									</select>
+								</div>
+							</div>
+						</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table//-->
+    	</div>
+        </div>    
+        <!-- 전체 영역 //-->
+        <!-- btnArea -->
+        <div class="btnArea">
+            <a href="#" class="btn_black"><span>등록</span></a>
+            <a href="#" class="btn_white"><span>닫기</span></a>
+        </div>
+        <!-- btnArea //-->
+	<a href="#"><img class="btn_close" src="images/popup/popup_close.png" alt="닫기" title="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+

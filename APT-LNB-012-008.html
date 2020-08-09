@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<div class="W100">
+		<div class="fl W50">
+			<div class="wrap">
+				<h5 class="sub_title first">현재 안전경보 단계</h5>
+				<!-- table-->
+				<table class="list mr0 small" >  
+					<caption>게시판리스트</caption>
+					<colgroup>
+						<col style="width:40%" />
+						<col style="width:15%" />
+						<col style="width:17%" />
+						<col style="width:17%" />
+						<col style="width:11%" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="C safe_level" rowspan="6">
+								<div class="level level_1">
+									<h6><span>현재 안전경보 현황은</span>관심단계</h6>
+									<p class="date">2018년 03월 19일 10:19:37</p>
+								</div>
+							</td>
+							<th class="C first thlineR" rowspan="2"><span class="table_title">구분</span></th>
+							<th class="C" colspan="2"><span class="table_title">관련내용</span></th>
+							<th class="C thlineL" rowspan="2"><span class="table_title">발령기간</span></th>
+						</tr>
+						<tr>
+							<th class="C"><span class="table_title">내부</span></th>
+							<th class="C thlineL"><span class="table_title">외부</span></th>
+						</tr>
+						<tr>
+							<td class="C"><span class="l_title level_1"><em></em>관심단계</span></td>
+							<td class="C"><p>평시업무수행</p></td>
+							<td class="C"><p>평시업무수행</p></td>
+							<td class="C"></td>
+						</tr>
+						<tr>
+							<td class="C"><span class="l_title level_2"><em></em>주의단계</span></td>
+							<td class="C"></td>
+							<td class="C"></td>
+							<td class="C"></td>
+						</tr>
+						<tr>
+							<td class="C"><span class="l_title level_3"><em></em>경계단계</span></td>
+							<td class="C"></td>
+							<td class="C"></td>
+							<td class="C"></td>
+						</tr>
+						<tr>
+							<td class="C"><span class="l_title level_4"><em></em>심각단계</span></td>
+							<td class="C"></td>
+							<td class="C"></td>
+							<td class="C"></td>
+						</tr>
+						<tr>
+							<td class="L safe_level" colspan="5">
+								<ul class="pd10">
+									<li><span class="l_title level_1"><em></em>관심단계</span>: 관심단계관련 내용이 들아갑니다.관심단계관련 내용이 들아갑니다.관심단계관련 내용이 들아갑니다.관심단계관련 내용이 들아갑니다.관심단계관련 내용이 들아갑니다.</li>
+									<li><span class="l_title level_2"><em></em>주의단계</span>: 주의단계 관련 내용이 들어갑니다.</li>
+									<li><span class="l_title level_3"><em></em>경계단계</span>: 경계단계 관련 내용이 들어갑니다.</li>
+									<li><span class="l_title level_4"><em></em>심각단계</span>: 심각단계 관련 내용이 들어갑니다.</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<h5 class="sub_title">단계별 경보발령 기준</h5>
+				<!-- table-->
+				<table class="list small">  
+					<caption>게시판리스트</caption>
+					<colgroup>
+						<col style="width:25%" />
+						<col style="width:25%" />
+						<col style="width:25%" />
+						<col style="width:25%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th class="C first thlineR" rowspan="2"><span class="table_title">구분</span></th>
+							<th class="C" colspan="2"><span class="table_title">발령기준</span></th>
+							<th class="C thlineL" rowspan="2"><span class="table_title">발령기간</span></th>
+						</tr>
+						<tr>
+							<th class="C"><span class="table_title">내부</span></th>
+							<th class="C thlineL"><span class="table_title">외부</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="C"><span class="l_title level_1"><em></em>관심단계</span></td>
+							<td class="C"><p>평상시</p></td>
+							<td class="C"><p>평상시</p></td>
+							<td class="C">상시</td>
+						</tr>
+						<tr>
+							<td class="C"><span class="l_title level_2"><em></em>주의단계</span></td>
+							<td class="C"><p>5분초과~10분 미만지연기상특보 (호우,태풍, 대설)</p></td>
+							<td class="C"><p>열차사고 및 사망사고 (자살제외)</p></td>
+							<td class="C">3일</td>
+						</tr>
+						<tr>
+							<td class="C"><span class="l_title level_3"><em></em>경계단계</span></td>
+							<td class="C"><p>운행장애(10분 이상)</p></td>
+							<td class="C"><p>대형사고 (3인 이상 사망사고)</p></td>
+							<td class="C">5일</td>
+						</tr>
+						<tr>
+							<td class="C"><span class="l_title level_4"><em></em>심각단계</span></td>
+							<td class="C">철도사고</td>
+							<td class="C">-</td>
+							<td class="C">7일</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="info pd10 pdt mr20 mrt">
+					<div>
+						<h5 class="btn_orange_line"><span class="important">유의사항</span></h5>
+						<ul class="mr15">
+							<li>경보발령 기간은 <em>발생 당일 부터 단계별 발령기간까지</em>(필요시 연장가능) 이며, 관련부서에서는 신속하게 단계별 후속조치 시행</li>
+							<li>기상특보(주의단계) 시 재난비상근무운영계획에 의거하여 추진</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fr W50">
+			<div class="wrap">
+				<h5 class="sub_title first">경보발령시 단계/분야별 후속조치 사항</h5>
+				<!-- table-->
+				<table class="list" >  
+					<caption>게시판리스트</caption>
+					<colgroup>
+						<col style="width:12%" />
+						<col style="width:22%" />
+						<col style="width:22%" />
+						<col style="width:22%" />
+						<col style="width:22%" />
+					</colgroup>
+					<thead>
+
+						<tr>
+							<th class="C"><span class="table_title">구분</span></th>
+							<th class="C thlineL"><span class="table_title">관심단계</span></th>
+							<th class="C thlineL"><span class="table_title">주의단계</span></th>
+							<th class="C thlineL"><span class="table_title">경계단계</span></th>
+							<th class="C thlineL"><span class="table_title">심각단계</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="C">신호</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>부서원 상황공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>긴급조치/순회점검</li>
+									<li>원인분석/대책공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>특별교육(회귀회의)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">통신</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>부서원 상황공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>긴급조치/순회점검</li>
+									<li>원인분석/대책공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>특별교육(회귀회의)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">건설<br>관리</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>부서원 상황공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>긴급조치/순회점검</li>
+									<li>원인분석/대책공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>특별교육(회귀회의)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">전기</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>부서원 상황공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>긴급조치/순회점검</li>
+									<li>원인분석/대책공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>특별교육(회귀회의)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">차량</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>원인분석 및 조치</li>
+									<li>월간 고장보고서 작성 및 부서원 공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>긴재발 방지대책 수립</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>특별교육(회귀회의)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">토목<br>건출</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>장애조치/원인분석</li>
+									<li>부서원 상황공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>재발 방지대책 수립</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>전직원 특별교육</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">기계</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>장애조치/원인분석</li>
+									<li>부서원 상황공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>재발 방지대책 수립</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>전직원 특별교육</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">선로</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>장애조치/원인분석</li>
+									<li>부서원 상황공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>재발 방지대책 수립</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>전직원 특별교육</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">관제</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계 열차무전 실시</li>
+									<li>기상특보 발령 및 전파</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>경계단계 열차무전 실시</li>
+									<li>복기훈련 실시</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>심각단계 열차무전 실시</li>
+									<li>전직원 특별교육</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">승무</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>승무적합성검사 및  일일교육 강화</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>게시교육</li>
+									<li>지도승무 강화</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>비상근무(팀장급 이상)</li>
+									<li>전직원 특별교육</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">영업</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>전역사 상황 전파 및 공유</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>주의단계(기본)</li>
+									<li>운행장애 관련 재발 방지 </li>
+									<li>대책 마련</li>
+									<li>게시교육</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>경계단계(기본)</li>
+									<li>각 역사 자체 특별교육</li>
+									<li>특별 순회점검(팀장 이상)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="C">외부<br>(공통)</td>
+							<td class="L tdlineL">
+								<ul class="bullet_line">
+									<li>평시업무</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								[열차 및 사상사고 발생시]
+								<ul class="bullet_line">
+									<li>(안전실)전사 시행문 또는 게시판 전파·공유</li>
+									<li>(전부서)자체 안전교육 시행</li>
+								</ul>
+							</td>
+							<td class="L tdlineL">
+								[대형사고 발생시]
+								<ul class="bullet_line">
+									<li>(안전실)주의단계(기본) + 특별  안전지도사 활동 시행</li>
+									<li>(전부서)주의단계(기본) + 자체 점검활동 강화 </li>
+								</ul>
+							</td>
+							<td class="L tdlineL">-</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="info pd10 pdt mr20 mrt">
+					<div class="orange">
+						<h5 class="fl btn_orange_line"><span class="important">유의사항</span></h5>
+						<p>각 분야별로 단계별 경보 발생 시 체계적인 후속조치 마련 및 추진</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h5 class="sub_title">안전경보제 운영</h5>
+	<div class="safe_alarm">
+		<h6 class="mr30 mrb">[사고 및 장애 사전 예방]</h6>
+		<dl class="step1">
+			<dt><img src="images/sub/safe_icon_01.png" alt="1단계" />
+				<span class="line2">연중 철도사고 및<br />운행장애 모니터링</span>
+			</dt>
+			<dd>안전실 : 대내외 전국 철도 운영기관<br />주요 사고 및 장애사례</dd>
+		</dl>
+		<dl class="step2">
+			<dt><img src="images/sub/safe_icon_02.png" alt="2단계" />
+				<span>경보발령</span>
+			</dt>
+			<dd>안전실 : 포털 경보발령 및 관제 통보</dd>
+		</dl>
+		<dl class="step3">
+			<dt><img src="images/sub/safe_icon_03.png" alt="3단계" />
+				<span>종합관제실</span>
+			</dt>
+			<dd>열차무선 경보 또는 SMS 발송<br />(전직원 공유)</dd>
+		</dl>
+		<dl class="step4">
+			<dt><img src="images/sub/safe_icon_04.png" alt="4단계" />
+				<span>관련부서</span>
+			</dt>
+			<dd>교육강화, 순회점검, 지도첨승 등</dd>
+		</dl>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+

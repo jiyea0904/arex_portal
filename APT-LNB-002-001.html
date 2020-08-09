@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<form>
+		<!-- tsearchArea -->
+		<div class="tsearchArea">
+			<fieldset>
+				<div class="inputbox">
+					<p class="txt"></p>
+					<select id="search_value_01">
+						<option>제목</option>
+						<option>장소</option>
+						<option>내용</option>
+					</select>
+				</div> 
+				<label for="search"></label><input type="text" id="search" value="검색어를 입력하세요."><a class="btn_search" href="#"><img src="images/sub/noti_search_icon.png" alt="search"></a> 
+			</fieldset>
+			<div class="fr">
+				<a class="btn_white" href="#"><span class="print">인쇄</span></a><a class="btn_gray" href="#"><span>공유그룹관리</span></a><a class="btn_gray" href="#"><span>자원예약</span></a><a class="btn_black" href="#"><span>일정등록</span></a>
+			</div>
+		</div>
+		<!-- tsearchArea //-->
+	</form>
+	<table class="calendar_date mr10 mrb">
+		<colgroup>
+			<col style="width:15%">
+			<col style="width:70%">
+			<col style="width:15%">
+		</colgroup>
+		<tbody>
+			<tr>
+				<td class="L"><a href="#" class="btn_white"><span class="today">Today</span></a></td>
+				<td class="C"><p><a href="#"><img src="images/sub/btn_date_prev.png" alt="이전달"></a><span>2018년 2월</span><a href="#"><img src="images/sub/btn_date_next.png" alt="다음달"></a></p></td>
+				<td class="R">
+					<div class="btn_tab">
+						<a href="#" class="on"><span>월(Month)</span></a>
+						<a href="#"><span>주(Week)</span></a>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- table-->
+	<table class="calendar" >  
+		<caption>캘린더</caption>
+		<colgroup>
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+			<col style="width:auto">
+		</colgroup>
+		<thead>
+			<tr>
+				<th class="C first"><span class="table_title">일</span></th>
+				<th class="C"><span class="table_title">월</span></th>
+				<th class="C"><span class="table_title">화</span></th>
+				<th class="C"><span class="table_title">수</span></th>
+				<th class="C"><span class="table_title">목</span></th>
+				<th class="C"><span class="table_title">금</span></th>
+				<th class="C"><span class="table_title">토</span></th>
+			</tr>
+		</thead>
+		<tbody>   
+			<tr>
+				<td class="L sun gray"><span class="date">28</span></td>
+				<td class="L gray"><span class="date">29</span></td>
+				<td class="L gray"><span class="date">30</span></td>
+				<td class="L gray"><span class="date">31</span></td>
+				<td class="L"><span class="date">1</span></td>
+				<td class="L"><span class="date">2</span></td>
+				<td class="L sat"><span class="date">3</span></td>
+			</tr>
+			<tr>
+				<td class="L sun"><span class="date">4</span></td>
+				<td class="L"><span class="date">5</span></td>
+				<td class="L"><span class="date">6</span></td>
+				<td class="L"><span class="date">7</span></td>
+				<td class="L"><span class="date">8</span></td>
+				<td class="L"><span class="date">9</span></td>
+				<td class="L sat"><span class="date">10</span></td>
+			</tr>
+			<tr>
+				<td class="L sun"><span class="date">11</span></td>
+				<td class="L"><span class="date">12</span></td>
+				<td class="L"><span class="date">13</span></td>
+				<td class="L"><span class="date">14</span></td>
+				<td class="L"><span class="date">15</span></td>
+				<td class="L"><span class="date">16</span></td>
+				<td class="L sat"><span class="date">17</span></td>
+			</tr>
+			<tr>
+				<td class="L sun"><span class="date">18</span></td>
+				<td class="L"><span class="date">19</span></td>
+				<td class="L"><span class="date">20</span></td>
+				<td class="L"><span class="date">21</span></td>
+				<td class="L"><span class="date">22</span></td>
+				<td class="L today"><span class="date">23</span>
+					<span class="schdule orange">13:00 ~ 14:00 홍길동</span>
+					<span class="schdule blue">13:00 ~ 14:00 홍길동</span>
+				</td>
+				<td class="L sat"><span class="date">24</span></td>
+			</tr>
+			<tr>
+				<td class="L sun"><span class="date">25</span></td>
+				<td class="L"><span class="date">26</span></td>
+				<td class="L"><span class="date">27</span></td>
+				<td class="L"><span class="date">28</span></td>
+				<td class="L gray"><span class="date">1</span></td>
+				<td class="L gray"><span class="date">2</span></td>
+				<td class="L gray"><span class="date">3</span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
+
+
+
+

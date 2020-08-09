@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<div class="info mr20 mrb">
+		<div>
+			<h5 class="btn_blue_line fl"><span class="setting">수신매체설정</span></h5>
+			<p>포털에서 이용하시는 서비스의 메일 알람 또는 SW Download 쪽지 알림 서비스를 설정하실 수 있습니다.</p>
+		</div>
+	</div>
+	<!-- table-->
+    <table class="list" >  
+        <caption>게시판리스트</caption>
+        <colgroup>
+            <col style="width:20%">
+            <col style="width:40%">
+			<col style="width:10%">
+			<col style="width:10%">
+			<col style="width:10%">
+			<col style="width:10%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2" class="C first"><span class="table_title">서비스 구분</span></th>
+                <th rowspan="2" class="C thlineL"><span class="table_title">분류</span></th>
+                <th colspan="4" class="C thlineL"><span class="table_title">알림설정</span></th>
+            </tr>
+			<tr>
+                <th class="C thlineL"><span class="table_title">전체받기</span></th>
+                <th class="C thlineL"><span class="table_title">e-mail</span></th>
+                <th class="C thlineL"><span class="table_title">UC</span></th>
+                <th class="C thlineL"><span class="table_title">해제</span></th>
+            </tr>
+        </thead>
+        <tbody>   
+            <tr>
+                <td class="C">일정 알림설정</td>
+				<td class="C tdlineL">일정공유/초대자에게 알림</td>
+				<td class="C tdlineL"><input type="radio" id="all" name="alarm"><label for="all"></label></td>
+				<td class="C tdlineL"><input type="radio" id="email" name="alarm"><label for="email"></label></td>
+				<td class="C tdlineL"><input type="radio" id="uc" name="alarm"><label for="uc"></label></td>
+				<td class="C tdlineL"><input type="radio" id="no" name="alarm"><label for="no"></label></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table//-->
+    <div class="btnArea mr20 mrt">
+		<a class="btn_black" href="#"><span>저장</span></a>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+

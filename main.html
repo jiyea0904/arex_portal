@@ -1,0 +1,1113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script>
+	function fn_tabAction(classNm){
+		
+	}
+	$( document ).ready(function(){
+		$(".ocrt_sub_tab").click(function(){
+			var f = $(this).siblings();
+			var num = $(this).attr("id");
+			
+			$(f).each(function( index ) {
+				var n = $(this).attr("id");
+				$(this).removeClass("sub_tab_on");
+				$("." + n ).hide();
+			});
+			
+			$(this).addClass("sub_tab_on");
+			$("." + num ).show();
+		});
+	});
+	
+</script></head>
+<body>
+<!--index_service -->
+<div id="index_service" class="index_service">
+	<div class="index_bg"></div>
+    <div class="layer_wrap">
+    	<div class="sub_layer">
+          	<div class="layer_header">
+            	<h2>서비스 바로가기</h2>
+                <a href="javascript:closeservice();"><img class="btn_close" src="images/main/popup_close.gif" alt="닫기" title="닫기"></a>
+            </div>
+            <div class="layer_cont">
+            	<ul>
+                	<li><a href="#">헬프데스크헬프데스크헬프데스크헬프데스크</a></li>
+                	<li><a href="#">철도안전관리체계</a></li>
+                	<li><a href="#">협업지원</a></li>
+                	<li><a href="#">신뢰성분석</a></li>
+                	<li><a href="#">지식제안</a></li>
+                	<li><a href="#">전사정보분석체계</a></li>
+                	<li><a href="#">내부 웹메일</a></li>
+                	<li><a href="#">개인정보보호체계</a></li>
+                	<li><a href="#">자원관리</a></li>
+                	<li><a href="#">웹정보(뉴스)수집</a></li>
+                </ul>
+                <!-- tcontrol-->
+                <div class="tcontrol">
+                    <!-- paging -->
+                    <div class="paging">            	
+                        <a class="no_bg" href="#" title="처음페이지"><img src="images/sub/btn_arr_first.png" alt="첫 페이지로 이동"></a> <a class="no_bg" href="#" title="이전페이지"><img src="images/sub/btn_arr_prev.png" alt="이전 페이지로 이동"></a> <a href="#" class="first">1</a> <a href="#" class="on">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a class="no_bg" href="#"><img src="images/sub/btn_arr_next.png" alt="다음 페이지로 이동" title="다음페이지"></a> <a class="no_bg" href="#"><img src="images/sub/btn_arr_last.png" alt="마지막 페이지로 이동" title="마지막페이지"></a>
+                    </div>
+                    <!-- paging//-->
+                </div>
+                <!-- tcontrol//-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--index_service //-->
+<!-- index_system -->
+<div id="index_system" class="index_system">
+    <div class="index_bg"></div>
+    <div class="layer_wrap">
+        <div class="sub_layer">
+          	<div class="layer_header">
+            	<h2>시스템 맵</h2>
+                <a href="javascript:closesystem();"><img class="btn_close" src="images/main/popup_close.gif" alt="닫기" title="닫기"></a>
+            </div>
+            <div class="layer_cont">
+            	<ul>
+                	<li class="cont_box_01">
+                    	<ul>
+                        	<li>
+                            	<span class="title">철도<br>업무</span>
+                                <ul class="list">
+                                	<li><a href="#" class="over">시설물</a></li>
+                                	<li><a href="#" class="over">신뢰성분석</a></li>
+                                	<li><a class="closed">역운영</a></li>
+                                	<li><a href="#" class="over">열차운행</a></li>
+                                	<li><a class="closed">영업관리</a></li>
+                                	<li><a href="#" class="over">자원관리</a></li>
+                                	<li><a href="#" class="over">제어설비</a></li>
+                                	<li><a class="closed">차량검수</a></li>
+                                	<li><a href="#" class="over">철도안전</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cont_box_02">
+                    	<ul>
+                        	<li>
+                            	<span class="title">기업<br>자원</span>
+                                <ul class="list">
+                                	<li><a href="#" class="over">e-감사</a></li>
+                                	<li><a href="#" class="over">경영정보(MIS)</a></li>
+                                	<li><a href="#" class="over">내부 웹메일</a></li>
+                                	<li><a href="#" class="over">내부회계통제</a></li>
+                                	<li><a href="#" class="over">웹전자결재</a></li>
+                                	<li><a class="closed">전자조달</a></li>
+                                	<li><a href="#" class="over">지식제안(KMS)</a></li>
+                                	<li><a class="closed">통합자료실(ECM)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cont_box_03">
+                    	<ul>
+                        	<li>
+                            	<span class="title">기타<br>업무</span>
+                                <ul class="list">
+                                	<li><a href="#" class="over">IT자산</a></li>
+                                	<li><a href="#" class="over">개인정보보호체계</a></li>
+                                	<li><a href="#" class="over">웹정보(뉴스) 수집</a></li>
+                                	<li><a href="#" class="over">전사 정보분석 체계</a></li>
+                                	<li><a class="closed">헬프데스크(ITSM)</a></li>
+                                	<li><a href="#" class="over">협업지원</a></li>
+                                	<li><a class="closed">역운영</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- index_system //-->
+	<!-- header -->
+	<header>
+		<!-- toparea -->
+		<div class="topArea">
+			<div class="wrap">
+				<ul class="fl list">
+					<li class="first"><a href="#">비상연락망</a></li>
+					<li><a href="#">헬프데스크</a></li>
+					<li><a href="#">직원검색</a></li>
+				</ul>
+				<div class="center">
+					<h1><a href="#"><img src="images/main/logo.png" alt="AREX 로고"></a></h1>
+					<div class="search">
+						<form name="searchfrm">
+							<fieldset>
+								<legend>검색</legend>
+									<div class="inputbox">
+										<p class="txt"></p>
+										<select id="search_value">
+											<option>통합검색</option>
+										</select>
+									</div>
+									<label for="search"></label><input type="text" id="search" value="검색어를 입력해주세요">
+									<a href="#" title="입력 검색어로 이동"><img src="images/main/search_icon.png" alt="검색아이콘"></a>
+							</fieldset>
+						</form>
+					</div>
+					<div class="flexslider1">
+						<ul class="content_bannner_list slides">
+							<li>
+								<ul class="search_list">
+									<li><a href="#">턴테이블</a></li>
+									<li><a href="#">내부경영평가</a></li>
+									<li><a href="#">경영평가</a></li>
+									<li><a href="#">운영메뉴얼</a></li>
+									<li><a href="#">2017</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="search_list">
+									<li><a href="#">턴테이블</a></li>
+									<li><a href="#">내부경영평가</a></li>
+									<li><a href="#">경영평가</a></li>
+									<li><a href="#">운영메뉴얼</a></li>
+									<li><a href="#">2017</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="search_list">
+									<li><a href="#">턴테이블</a></li>
+									<li><a href="#">내부경영평가</a></li>
+									<li><a href="#">경영평가</a></li>
+									<li><a href="#">운영메뉴얼</a></li>
+									<li><a href="#">2017</a></li>
+								</ul>
+							</li>
+						  </ul>
+					</div>
+				</div>
+				<div class="fr btn">
+					<p class="user"><em>이승준</em>님</p>
+					<a href="#" class="btn_blue_line"><span class="setting">개인정보</span></a>
+					<a href="#" class="btn_blue_line"><span class="setting">환경설정</span></a>
+					<a href="#" class="btn_darkb_line"><span class="message">CAFE</span></a>
+					<a href="#" class="btn_orange_line"><span class="logout">로그아웃</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- toparea //-->
+		<!-- gnb -->
+		<div id="gnb">
+			<div class="gnb_right"></div>
+			<div class="wrap">
+				<ul class="gnb_left depth01">
+					<li class="first"><a href="#">전자우편</a></li>
+					<li><a href="#">일정관리</a></li>
+					<li><a href="#">협업지원</a></li>
+					<li><a href="#">경영정보</a></li>
+					<li class="depth"><a href="#">e감사</a>
+						<div class="depth02">
+							<ul>
+								<li><a href="#">일상감사</a></li>
+								<li><a href="#">감사계획</a></li>
+								<li><a href="#">감사수행</a></li>
+								<li><a href="#">감사결과</a></li>
+								<li><a href="#">리스크관리</a></li>
+								<li><a href="#">상시모니터</a></li>
+								<li><a href="#">청렴게시판</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="depth"><a href="#">결재업무</a>
+						<div class="depth02">
+							<ul>
+								<li><a href="#">전자결재</a></li>
+								<li><a href="#">기록물철관리</a></li>
+								<li><a href="#">메모보고</a></li>
+								<li><a href="#">웹전자결재</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="depth"><a href="#">사업/과제</a>
+						<div class="depth02">
+							<ul>
+								<li><a href="#">주요 사업/과제</a></li>
+								<li><a href="#">경영층 지시사항</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="depth"><a href="#">전자게시</a>
+						<div class="depth02">
+							<ul>
+								<li><a href="#">게시판</a></li>
+								<li><a href="#">자원신청</a></li>
+								<li><a href="#">비상연락망</a></li>
+								<li><a href="#">홍보콘텐츠</a></li>
+								<li><a href="#">사규&amp;서식 자료실</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">웹오피스</a></li>
+					<li class="depth"><a href="#">지식제안</a>
+						<div class="depth02 right">
+							<ul>
+								<li><a href="#">위키지식</a></li>
+								<li><a href="#">i-톡톡</a></li>
+								<li><a href="#">CoP</a></li>
+								<li><a href="#">토론</a></li>
+								<li><a href="#">설문조사</a></li>
+								<li><a href="#">업무매뉴얼</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">통합자료실</a></li>
+					<li class="depth"><a href="#">업무지원</a>
+						<div class="depth02 right">
+							<ul>
+								<li><a href="#">SW Download</a></li>
+								<li><a href="#">3무 운동 현황</a></li>
+								<li><a href="#">3무 운동 관리</a></li>
+								<li><a href="#">헬프데스크</a></li>
+								<li><a href="#">권한신청</a></li>
+								<li><a href="#">업무일지(전산)</a></li>
+								<li><a href="#">업무일지(유지)</a></li>
+								<li><a href="#">안전경보 현황</a></li>
+								<li><a href="#">안전경보 관리</a></li>
+								<li><a href="#">통통한마당</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="gnb_pattern"></div>
+				<ul class="right_list">
+					<li><a href="javascript:openservice();">서비스 바로가기</a></li>
+					<li><a href="javascript:opensystem();">시스템 맵</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- gnb //-->
+	</header>
+	<!-- header //-->
+	<!-- body -->
+	<div id="body" class="pd40 pdt">
+		<div class="wrap">
+			<section id="sub_tab" class="fl top">
+				<ul class="sub_tab ocrt_tab clearfix">
+					<li class="ocrt_sub_tab sub_tab_on" id="ocrt_list_tab0"><a href="#org" class="on">기본업무현황<em>(+35)</em></a><a href="#" class="btn_refresh">새로고침</a></li>
+					<li class="ocrt_sub_tab" id="ocrt_list_tab1"><a href="#org" class="on">분야별 업무현황<em>(+12)</em></a><a href="#" class="btn_refresh">새로고침</a></li>
+				</ul>
+				<div class="ocrt_wrap clearfix">
+					<!--기본업무현황-->
+					<div class="ocrt_01 ocrt_list_tab0 list">
+						<!-- 마일리지 -->
+						<div class="p_11">
+							<h3>마일리지</h3>
+							<ul class="colList blue">
+								<li class="first"><span class="title">당월 포인트</span><a href="#"><em class="point">123,454</em></a></li>
+								<li><span class="title">누적 포인트</span><a href="#"><em class="point">123,456</em></a></li>
+							</ul>
+						</div>
+						<!-- 마일리지 //-->
+						<!-- 전자우편 -->
+						<div class="p_11">
+							<h3>전자우편</h3>
+							<ul class="colList orange">
+								<li class="first"><span class="title">내부 전자메일</span><a href="#"><em class="email">44건</em></a></li>
+								<li><span class="title">외부 전자메일</span><a href="#"><em class="email">35건</em></a></li>
+							</ul>
+						</div>
+						<!-- 전자우편 //-->
+						<!-- 웹전자결재 -->
+						<div class="p_21">
+							<div class="portlet_wrap">
+								<h3>웹전자결재</h3>
+								<ul class="orderList blue">
+									<li class="W25 blue"><img src="images/main/orderList_icon_suspense.png" alt="미결" />미결<a href="#">45건</a></li>
+									<li class="W25 blue"><img src="images/main/orderList_icon_reception.png" alt="수신" />수신<a href="#">08건</a></li>
+									<li class="W25"><img src="images/main/orderList_icon_progress.png" alt="진행" />진행<a href="#">44건</a></li>
+									<li class="W25"><img src="images/main/orderList_icon_publicity.png" alt="공람" />공람<a href="#">45건</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 웹전자결재 //-->
+						<!-- 결재업무 -->
+						<div class="p_12">
+							<h3>결재업무</h3>
+							<ul class="iconList left">
+								<li><img src="images/main/iconList_icon_suspense_off.png" alt="미결" /><span>미결<a href="#">45건</a></span></li>
+								<li><img src="images/main/iconList_icon_progress_off.png" alt="진행" /><span>진행<a href="#">08건</a></span></li>
+								<li><img src="images/main/iconList_icon_reception_off.png" alt="수신" /><span>수신<a href="#">44건</a></span></li>
+								<li><img src="images/main/iconList_icon_publicity_off.png" alt="공람" /><span>공람<a href="#">45건</a></span></li>
+								<li><img src="images/main/iconList_icon_memo_off.png" alt="새메모" /><span>새메모<a href="#">45건</a></span></li>
+								<li><img src="images/main/iconList_icon_opinion_off.png" alt="새의견" /><span>새의견<a href="#">45건</a></span></li>
+							</ul>
+						</div>
+						<!-- 결재업무 //-->
+						<!-- 경영정보 -->
+						<div class="p_12">
+							<h3 class="mr10 mrb">경영정보</h3>
+							<ul class="bulletList darkblue">
+								<li>초과근무 신청<a href="#">13건</a></li>
+								<li>초과근무 명령<a href="#">13건</a></li>
+								<li>근태 신청<a href="#">13건</a></li>
+								<li>대무 신청<a href="#">13건</a></li>
+								<li>근태조정 신청<a href="#">13건</a></li>
+							</ul>
+						</div>
+						<!-- 경영정보 //-->
+						<!-- e감사 -->
+						<div class="p_12">
+							<h3>e감사</h3>
+							<div class="list_top">
+								<dl class="fl">
+									<dt><img src="images/main/icon_einspection.png" alt="일상감사" /></dt>
+									<dd>일상감사</dd>
+								</dl>
+								<ul class="fr bulletList_over orange">
+									<li>미결<a href="#">13건</a></li>
+									<li>진행<a href="#">13건</a></li>
+									<li>접수<a href="#">13건</a></li>
+								</ul>
+							</div>
+							<ul class="bulletList_over orange">
+								<li>청렴문제 참여요청<a href="#">13건</a></li>
+								<li>상시모니터링 소명요청 <a href="#">13건</a></li>
+							</ul>
+						</div>
+						<!-- e감사 //-->
+						<!-- 기타 -->
+						<div class="p_12">
+							<h3>기타</h3>
+							<div class="list_top">
+								<dl class="fl">
+									<dt><img src="images/main/icon_status.png" alt="참여현황" /></dt>
+									<dd>참여현황</dd>
+								</dl>
+								<ul class="fr bulletList_over orange">
+									<li>협업지원<a href="#">13건</a></li>
+									<li>설문조사<a href="#">13건</a></li>
+									<li>웹오피스<a href="#">13건</a></li>
+								</ul>
+							</div>
+							<ul class="bulletList_over orange">
+								<li>권한설정 미결<a href="#">13건</a></li>
+								<li>권한설정 진행<a href="#">13건</a></li>
+							</ul>
+						</div>
+						<!-- 기타 //-->
+					</div>
+					<!--//기본업무현황-->
+					<!--분야별업무현황-->
+					<div class="ocrt_01 ocrt_list_tab1 list none">
+						<!-- 경영정보(재무회계/구매자재) -->
+						<div class="p_12">
+							<h3>경영정보(재무회계/구매자재)</h3>
+							<ul class="iconList line4">
+								<li><img src="images/main/iconList_icon_company_off.png" alt="거래업체 승인" />거래업체 승인<a href="#">45건</a></li>
+								<li><img src="images/main/iconList_icon_card_off.png" alt="법인카드 승인" />법인카드 승인<a href="#">08건</a></li>
+								<li><img src="images/main/iconList_icon_numbering_off.png" alt="품번생성 신청" />품번생성 신청<a href="#">44건</a></li>
+								<li><img src="images/main/iconList_icon_stock_off.png" alt="재고상태 변경" />재고상태 변경<a href="#">45건</a></li>
+							</ul>
+						</div>
+						<!-- 경영정보(재무회계/구매자재) //-->
+						<!-- 경영정보(총무관리) -->
+						<div class="p_12">
+							<h3>경영정보(총무관리)</h3>
+							<ul class="iconList line3">
+								<li><img src="images/main/iconList_icon_stamp_off.png" alt="인장사용신청" /><span>인장사용<br>신청</span><a href="#">45건</a></li>
+								<li><img src="images/main/iconList_icon_book_off.png" alt="도서대여신청" /><span>도서대여<br>신청</span><a href="#">08건</a></li>
+								<li><img src="images/main/iconList_icon_building_off.png" alt="사옥관리유지보수" /><span>사옥관리<br>유지보수</span><a href="#">44건</a></li>
+							</ul>
+						</div>
+						<!-- 경영정보(총무관리) //-->
+						<!-- 지식제안 -->
+						<div class="p_21">
+							<div class="portlet_wrap">
+								<h3>지식제안</h3>
+								<ul class="orderList orange">
+									<li class="W25 orange"><img src="images/main/orderList_icon_suppose.png" alt="제안" />제안<a href="#">45건</a></li>
+									<li class="W25 orange"><img src="images/main/orderList_icon_knowlege.png" alt="지식" />지식<a href="#">08건</a></li>
+									<li class="W25"><img src="images/main/orderList_icon_valuation.png" alt="평가" />평가<a href="#">44건</a></li>
+									<li class="W25"><img src="images/main/orderList_icon_okay.png" alt="승인" />승인<a href="#">45건</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 지식제안 //-->
+						<!-- 전자조달 -->
+						<div class="p_21">
+							<div class="portlet_wrap">
+								<h3>전자조달</h3>
+								<ul class="orderList blue">
+									<li class="W33 blue"><img src="images/main/orderList_icon_proof.png" alt="제안" /><span>실적증명<br>요청</span><a href="#">45건</a></li>
+									<li class="W33"><img src="images/main/orderList_icon_sign.png" alt="지식" /><span>계약업체<br>서명요청</span><a href="#">08건</a></li>
+									<li class="W33"><img src="images/main/orderList_icon_list.png" alt="평가" />기성신청<a href="#">44건</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 전자조달 //-->
+						<!-- 홈페이지 -->
+						<div class="p_11">
+							<h3>홈페이지</h3>
+							<ul class="colList blue">
+								<li class="first"><span class="title">고객의소리 미결</span><a href="#"><em class="question">56건</em></a></li>
+								<li><span class="title">사이버 감사실</span><a href="#"><em class="cyber">45건</em></a></li>
+							</ul>
+						</div>
+						<!-- 홈페이지 //-->
+						<!-- 헬프데스크 -->
+						<div class="p_11">
+							<h3>헬프데스크</h3>
+							<ul class="colList orange">
+								<li class="first"><span class="title">미결 사항</span><a href="#"><em class="help">45건</em></a></li>
+								<li><span class="title">진행 사항</span><a href="#"><em class="help">56건</em></a></li>
+							</ul>
+						</div>
+						<!-- 헬프데스크 //-->
+						<!-- 철도업무 -->
+						<div class="p_21">
+							<div class="portlet_wrap">
+								<h3>철도업무</h3>
+								<ul class="orderList darkblue">
+									<li class="W33 blue"><img src="images/main/orderList_icon_graph.png" alt="영업관리" /><span>영업관리<br>미결</span><a href="#">45건</a></li>
+									<li class="W33"><img src="images/main/orderList_icon_subway.png" alt="열차운행" /><span>열차운행<br>미결</span><a href="#">08건</a></li>
+									<li class="W33"><img src="images/main/orderList_icon_facility.png" alt="시설물" /><span>시설물<br>미결</span><a href="#">44건</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 철도업무 //-->
+					</div>
+					<!--//분야별업무현황-->
+				</div>
+			</section>
+			<section class="fl top">
+				<h2>주요업무현황</h2>
+				<div>
+					<!-- 오늘의할일 -->
+					<div class="p_22">
+						<div class="portlet_wrap">
+							<div class="calendar">
+								<div class="calendar_date">
+									<p><a href="#" class="mr8 mrr"><img src="images/main/btn_prev.png" alt="이전년도" /></a><em>2017</em>년<a href="#" class="mr8 mrl"><img src="images/main/btn_next.png" alt="다음년도" /></a></p>
+									<p><a href="#" class="mr8 mrr"><img src="images/main/btn_prev.png" alt="이전달" /></a><em>12</em>월<a href="#" class="mr8 mrl"><img src="images/main/btn_next.png" alt="다음달" /></a></p>
+								</div>
+								<table>
+									<caption>달력</caption>
+									<colgroup>
+										<col style="width:auto;" />
+										<col style="width:auto;" />
+										<col style="width:auto;" />
+										<col style="width:auto;" />
+										<col style="width:auto;" />
+										<col style="width:auto;" />
+										<col style="width:auto;" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th class="sun">SUN</th>
+											<th>MON</th>
+											<th>TUE</th>
+											<th>WED</th>
+											<th>THR</th>
+											<th>FRI</th>
+											<th class="sat">SAT</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="gray">26</td>
+											<td class="gray">27</td>
+											<td class="gray">28</td>
+											<td class="gray">29</td>
+											<td class="gray">30</td>
+											<td class=""><span class="blue">01</span></td>
+											<td class="sat">02</td>
+										</tr>
+										<tr>
+											<td class="sun">03</td>
+											<td class="">04</td>
+											<td class="">05</td>
+											<td class="">06</td>
+											<td class="">07</td>
+											<td class="">08</td>
+											<td class="sat">09</td>
+										</tr>
+										<tr>
+											<td class="sun">10</td>
+											<td class="">11</td>
+											<td class="">12</td>
+											<td class=""><span class="today">13</span></td>
+											<td class=""><span class="gray">14</span></td>
+											<td class=""><span class="orange">15</span></td>
+											<td class="sat">16</td>
+										</tr>
+										<tr>
+											<td class="sun">17</td>
+											<td class=""><span class="blue">18</span></td>
+											<td class="">19</td>
+											<td class="">20</td>
+											<td class="">21</td>
+											<td class="">22</td>
+											<td class="sat">23</td>
+										</tr>
+										<tr>
+											<td class="sun">24</td>
+											<td class="">25</td>
+											<td class="">26</td>
+											<td class="">27</td>
+											<td class="">28</td>
+											<td class="">29</td>
+											<td class="sat">30</td>
+										</tr>
+										<tr>
+											<td class="sun">31</td>
+											<td class="gray">01</td>
+											<td class="gray">02</td>
+											<td class="gray">03</td>
+											<td class="gray">04</td>
+											<td class="gray">05</td>
+											<td class="gray">06</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="list">
+								<h3>오늘의 할일</h3>
+								<ul class="dateList groupList">
+									<li><a href="#"><span class="bullet blue">개인</span><span class="title">시운전열차 운행시운전열차 운행</span></a><span class="date">2018.12.15. 12:00 ~ 2018.12.19. 12:00</span></li>
+									<li><a href="#"><span class="bullet orange">부서</span><span class="title">인천국제공항 T2 연결</span></a><span class="date">2018.12.15. 12:00 ~ 2018.12.19. 12:00</span></li>
+									<li><a href="#"><span class="bullet gray">전사</span><span class="title">법인카드 사용제한시간</span></a><span class="date">2018.12.15. 12:00 ~ 2018.12.19. 12:00</span></li>
+								</ul>
+							</div>
+							<a href="#" class="btn_more">+ 더보기</a>
+						</div>
+					</div>
+					<!-- 오늘의할일 //-->
+					<!-- 전사시행문 -->
+					<div class="p_22">
+						<div class="portlet_wrap">
+							<h3>전사시행문</h3>
+							<div class="flexslider2">
+								<ul class="content_bannner_list slides">
+									<li>
+										<div class="contents">
+											<ul class="normalList">
+												<li><img src="images/main/new_icon.png" alt="새글" /><a href="#">시운전열차 운행(9.16새벽, PSD이중)시운전열차 운행(9.16새벽, PSD이중)</a>
+													<span class="location">수송조정처</span><span class="date">2018.09.11</span></li>
+												<li><img src="images/main/new_icon.png" alt="새글" /><a href="#">신호시스템 교체방안에 대한 기술 안내</a>
+													<span class="location">신호통신처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">인천국제공항 T2 연결철도 종합시험운행</a><span class="location">수송조정처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">[인사발령] 인사처</a><span class="location">인사처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">법인카드 사용제한시간(지역) 소명방법</a><span class="location">재무처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">9월 재난안전 상황분석 결과 및 중점관리</a><span class="location">안전실</span><span class="date">2018.09.11</span></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="contents">
+											<ul class="normalList">
+												<li><img src="images/main/new_icon.png" alt="새글" /><a href="#">시운전열차 운행(9.16새벽, PSD이중)시운전열차 운행(9.16새벽, PSD이중)</a>
+													<span class="location">수송조정처</span><span class="date">2018.09.11</span></li>
+												<li><img src="images/main/new_icon.png" alt="새글" /><a href="#">신호시스템 교체방안에 대한 기술 안내</a>
+													<span class="location">신호통신처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">인천국제공항 T2 연결철도 종합시험운행</a><span class="location">수송조정처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">[인사발령] 인사처</a><span class="location">인사처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">법인카드 사용제한시간(지역) 소명방법</a><span class="location">재무처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">9월 재난안전 상황분석 결과 및 중점관리</a><span class="location">안전실</span><span class="date">2018.09.11</span></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="contents">
+											<ul class="normalList">
+												<li><img src="images/main/new_icon.png" alt="새글" /><a href="#">시운전열차 운행(9.16새벽, PSD이중)시운전열차 운행(9.16새벽, PSD이중)</a>
+													<span class="location">수송조정처</span><span class="date">2018.09.11</span></li>
+												<li><img src="images/main/new_icon.png" alt="새글" /><a href="#">신호시스템 교체방안에 대한 기술 안내</a>
+													<span class="location">신호통신처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">인천국제공항 T2 연결철도 종합시험운행</a><span class="location">수송조정처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">[인사발령] 인사처</a><span class="location">인사처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">법인카드 사용제한시간(지역) 소명방법</a><span class="location">재무처</span><span class="date">2018.09.11</span></li>
+												<li><a href="#">9월 재난안전 상황분석 결과 및 중점관리</a><span class="location">안전실</span><span class="date">2018.09.11</span></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<div class="control">
+									<ul>
+										<li class="sliderPrev"><img src="images/main/btn_prev.png" alt="이전" /></li>
+										<li class="sliderCurrent"></li>
+										<li>/</li>
+										<li class="sliderTotal"></li>
+										<li class="sliderNext"><img src="images/main/btn_next.png" alt="다음" /></li>
+									</ul>
+								</div>
+							</div>
+							<a href="#" class="btn_more">+ 더보기</a>
+						</div>
+					</div>
+					<!-- 전사시행문 //-->
+					<!-- 수송인원 -->
+					<div class="p_22">
+						<div class="portlet_wrap">
+							<div class="Portlet_tab_normal m1">
+								<ul>
+									<li class="m1"><a href="#"><span>수송인원</span></a>
+										<div class="move">
+											<p><a href="#"><img src="images/main/btn_prev.png" alt="이전년도" /></a><span><b>2018</b>년 <b>2</b>월 <b>3</b>일 <em>토요일</em></span><a href="#"><img src="images/main/btn_next.png" alt="다음년도" /></a><span class="table_bullet">(단위:명,%)</span></p>
+											<table>
+												<caption>수송인원</caption>
+												<colgroup>
+													<col style="width:16%" />
+													<col style="width:42%" />
+													<col style="width:42%" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th></th>
+														<th>일별기준</th>
+														<th>누적기준</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>직통열차</th>
+														<td>
+															<ul class="blue">
+																<li>실적 <em>80,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W80"></span></p><b>80%</b></li>
+															</ul>
+														</td>
+														<td>
+															<ul class="blue">
+																<li>실적 <em>80,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W80"></span></p><b>80%</b></li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<th>일반열차</th>
+														<td>
+															<ul class="orange">
+																<li>실적 <em>90,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W90"></span></p><b>90%</b></li>
+															</ul>
+														</td>
+														<td>
+															<ul class="orange">
+																<li>실적 <em>90,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W90"></span></p><b>90%</b></li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<th>총계</th>
+														<td>
+															<ul class="gray">
+																<li>실적 <em>80,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W80"></span></p><b>80%</b></li>
+															</ul>
+														</td>
+														<td>
+															<ul class="gray">
+																<li>실적 <em>80,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W80"></span></p><b>80%</b></li>
+															</ul>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<a href="#" class="btn_more">+ 더보기</a>
+										</div>
+									</li>
+									<li class="m2"><a href="#"><span>수송수입</span></a>
+										<div class="move">
+											<p><a href="#"><img src="images/main/btn_prev.png" alt="이전년도" /></a><b>2018</b>년 <b>2</b>월 <b>3</b>일 <em>토요일</em><a href="#"><img src="images/main/btn_next.png" alt="다음년도" /></a><span class="table_bullet">(단위:명,%)</span></p>
+											<table>
+												<caption>수송인원</caption>
+												<colgroup>
+													<col style="width:16%" />
+													<col style="width:42%" />
+													<col style="width:42%" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th></th>
+														<th>일별기준</th>
+														<th>누적기준</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>직통열차</th>
+														<td>
+															<ul class="blue">
+																<li>실적 <em>80,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W80"></span></p><b>80%</b></li>
+															</ul>
+														</td>
+														<td>
+															<ul class="blue">
+																<li>실적 <em>80,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W80"></span></p><b>80%</b></li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<th>일반열차</th>
+														<td>
+															<ul class="orange">
+																<li>실적 <em>90,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W90"></span></p><b>90%</b></li>
+															</ul>
+														</td>
+														<td>
+															<ul class="orange">
+																<li>실적 <em>90,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W90"></span></p><b>90%</b></li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<th>총계</th>
+														<td>
+															<ul class="gray">
+																<li>실적 <em>80,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W80"></span></p><b>80%</b></li>
+															</ul>
+														</td>
+														<td>
+															<ul class="gray">
+																<li>실적 <em>80,000</em> / 계획 <em>100,000</em></li>
+																<li><p class="graph"><span class="W80"></span></p><b>80%</b></li>
+															</ul>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<a href="#" class="btn_more">+ 더보기</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 수송인원 //-->
+					</div>
+				</div>
+			</section>
+			<section class="fl top">
+				<h2>사내알림</h2>
+				<div>
+					<!-- 공지사항 -->
+					<div class="p_22">
+						<div class="portlet_wrap">
+							<h3>공지사항</h3>
+							<ul class="normalList">
+								<li><img src="images/main/new_icon.png" alt="새글" /><a href="#">시운전열차 운행(9.16새벽, PSD이중)</a>
+									<span class="person">홍길동</span><span class="date">2018.09.11</span></li>
+								<li><img src="images/main/new_icon.png" alt="새글" /><a href="#">신호시스템 교체방안에 대한 기술 안내</a>
+									<span class="person">장길산</span><span class="date">2018.09.11</span></li>
+								<li><a href="#">인천국제공항 T2 연결철도 종합시험운행</a><span class="person">신돌석</span><span class="date">2018.09.11</span></li>
+								<li><a href="#">[인사발령] 인사처</a><span class="person">전우치</span><span class="date">2018.09.11</span></li>
+								<li><a href="#">법인카드 사용제한시간(지역) 소명방법</a><span class="person">홍경래</span><span class="date">2018.09.11</span></li>
+								<li><a href="#">9월 재난안전 상황분석 결과 및 중점관리</a><span class="person">전봉준</span><span class="date">2018.09.11</span></li>
+							</ul>
+							<a href="#" class="btn_more">+ 더보기</a>
+						</div>
+					</div>
+					<!-- 공지사항 //-->
+					<!-- 3무운동현황 -->
+					<div class="p_12">
+						<h3>3무 운동현황</h3>
+						<ul class="none3">
+							<li class="blue"><em>무</em>재해<span class="year">6년</span><img src="images/main/arr_blue.png" alt="화살표" /><span class="fr"><em>3455</em> 일</span></li>
+							<li class="darkblue"><em>무</em>사고<span class="year">5년</span><img src="images/main/arr_darkblue.png" alt="화살표" /><span class="fr"><em>2250</em> 일</span></li>
+							<li class="orange"><em>무</em>지연<span class="year">6달</span><img src="images/main/arr_orange.png" alt="화살표" /><span class="fr"><em>399</em> 일</span></li>
+						</ul>
+					</div>
+					<!-- 3무운동현황 //-->
+					<!-- 안전경보현황 -->
+					<div class="p_12">
+						<h3>안전경보현황</h3>
+						<div class="level level_1">
+							<h6><span>현재 안전경보 현황은</span>관심단계</h6>
+						</div>
+					</div>
+					<!-- 안전경보현황 //-->
+					<!-- 팝업존 -->
+					<div class="p_12">
+						<h3>팝업존</h3>
+						<div class="flexslider3">
+							<ul class="content_bannner_list slides">
+								<li><a href="#"><img src="images/main/banner_img.gif" alt="배너이미지" /></a></li>
+								<li><a href="#"><img src="images/main/banner_img.gif" alt="배너이미지" /></a></li>
+								<li><a href="#"><img src="images/main/banner_img.gif" alt="배너이미지" /></a></li>
+							</ul>
+							<div class="control">
+								<ul>
+									<li class="sliderPrev"><img src="images/main/btn_prev.png" alt="이전" /></li>
+									<li class="sliderCurrent"></li>
+									<li>/</li>
+									<li class="sliderTotal"></li>
+									<li class="sliderNext"><img src="images/main/btn_next.png" alt="다음" /></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 팝업존 //-->
+					<!-- 바로가기 -->
+					<div class="p_12">
+						<a href="#" class="quickLink">
+							<img src="images/main/quickLink_img_01.png" alt="통통한마당" />
+							<h6><em class="blue">통</em><em class="blue">통</em>한마당</h6>
+							<p>서로 소통하여 마음이 통한다.</p>
+						</a>
+						<a href="#" class="quickLink line2">
+							<img src="images/main/quickLink_img_02.png" alt="철도안전관리체계" />
+							<h6>철도안전관리체계<em class="orange">Q&#38;A</em></h6>
+							<span>바로가기</span>
+						</a>
+					</div>
+					<!-- 바로가기 //-->
+				</div>
+			</section>
+			<section class="bottom">
+				<h2 class="notice"><span>주요소식</span></h2>
+				<!-- 식단 -->
+				<div class="p_12">
+					<div class="Portlet_tab_normal m1">
+						<ul>
+							<li class="m1"><a href="#"><span>식단(본사)</span></a>
+								<div class="small mr10 mrt">
+									<ul class="normalList">
+										<li><a href="#">2018년 2월 4주차 주간식단표</a><span class="new">NEW</span></li>
+										<li><a href="#">2018년 2월 3주차 주간식단표</a></li>
+										<li><a href="#">2018년 2월 4주차 주간식단표</a></li>
+										<li><a href="#">2018년 2월 1주차 주간식단표</a></li>
+										<li><a href="#">2018년 1월 5주차 주간식단표</a></li>
+										<li><a href="#">2018년 1월 4주차 주간식단표</a></li>
+									</ul>
+									<a href="#" class="btn_more">+ 더보기</a>
+								</div>
+							</li>
+							<li class="m2"><a href="#"><span>식단(용유)</span></a>
+								<div class="small mr10 mrt">
+									<ul class="normalList">
+										<li><a href="#">2018년 2월 4주차 주간식단표</a><span class="new">NEW</span></li>
+										<li><a href="#">2018년 2월 3주차 주간식단표</a></li>
+										<li><a href="#">2018년 2월 4주차 주간식단표</a></li>
+										<li><a href="#">2018년 2월 1주차 주간식단표</a></li>
+										<li><a href="#">2018년 1월 5주차 주간식단표</a></li>
+										<li><a href="#">2018년 1월 4주차 주간식단표</a></li>
+									</ul>
+									<a href="#" class="btn_more">+ 더보기</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 식단 //-->
+				<!-- 청렴게시판 -->
+				<div class="p_12">
+					<h3>청렴게시판</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 청렴게시판 //-->
+				<!-- 안전게시판 -->
+				<div class="p_12">
+					<h3>안전게시판</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 안전게시판 //-->
+				<!-- 언론사뉴스 -->
+				<div class="p_12">
+					<h3>언론사뉴스</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 언론사뉴스 //-->
+				<!-- 유관기관소식 -->
+				<div class="p_12">
+					<h3>유관기관소식</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 유관기관소식 //-->
+				<!-- ECM 멀티자료 -->
+				<div class="p_12">
+					<h3>ECM 멀티자료</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- ECM 멀티자료 //-->
+			</section>
+			<section class="bottom">
+				<h2 class="graph"><span>주요현황</span></h2>
+				<!-- 주요사업/과제 추진현황 -->
+				<div class="p_12">
+					<h3>주요사업/과제 추진현황</h3>
+					<!-- graphWrap 안에 그래프 삽입 (인스타일 속성 삭제후 사용) -->
+					<div class="graphWrap" style="border:1px solid #ff0000;"></div>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 주요사업/과제 추진현황 //-->
+				<!-- 경영층 지시현황 -->
+				<div class="p_12">
+					<h3>경영층 지시현황</h3>
+					<!-- graphWrap 안에 그래프 삽입 (인스타일 속성 삭제후 사용) -->
+					<div class="graphWrap" style="border:1px solid #ff0000;"></div>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 경영층 지시현황 //-->
+				<!-- 정보분석 -->
+				<div class="p_22">
+					<div class="portlet_wrap">
+						<h3>정보분석</h3>
+						<!-- graphWrap 안에 그래프 삽입 (인스타일 속성 삭제후 사용) -->
+						<div class="graphWrap" style="border:1px solid #ff0000;"></div>
+						<a href="#" class="btn_more">+ 더보기</a>
+					</div>
+				</div>
+				<!-- 정보분석 //-->
+				<!-- 전자조달 -->
+				<div class="p_12">
+					<h3>전자조달</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 전자조달 //-->
+				<!-- 철도업무 용어사전 -->
+				<div class="p_12">
+					<h3>철도업무 용어사전</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 철도업무 용어사전 //-->
+			</section>
+			<section class="bottom">
+				<h2 class="message"><span>커뮤니케이션</span></h2>
+				<!-- i-톡톡 -->
+				<div class="p_12">
+					<h3>i-톡톡</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시시운전열차 운행(9.16새벽 6시))</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- i-톡톡 //-->
+				<!-- 위키지식 -->
+				<div class="p_12">
+					<h3>위키지식</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 위키지식 //-->
+				<!-- 업무매뉴얼 -->
+				<div class="p_12">
+					<h3>업무매뉴얼</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 업무매뉴얼 //-->
+				<!-- 용어사전 -->
+				<div class="p_12">
+					<h3>용어사전</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 용어사전 //-->
+				<!-- 토론마당 -->
+				<div class="p_12">
+					<h3>토론마당</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 토론마당 //-->
+				<!-- 직원소식 -->
+				<div class="p_12">
+					<h3>직원소식</h3>
+					<ul class="dateList">
+						<li><a href="#"><span class="title">시운전열차 운행(9.16새벽 6시)</span><span class="new">NEW</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">인천국제공항 T2 연결철도 운행</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">법인카드 사용제한시간(지역)을 안내드립니다.</span></a><span class="date">2018.02.18</span></li>
+						<li><a href="#"><span class="title">9월 재난안전 상황분석 결과 및 보고서</span></a><span class="date">2018.02.18</span></li>
+					</ul>
+					<a href="#" class="btn_more">+ 더보기</a>
+				</div>
+				<!-- 직원소식 //-->
+			</section>
+		</div>
+	</div>
+	<!-- body //-->
+	<!-- footer -->
+	<footer>
+		<p class="C">COPYRIGHT© 2018 BY AIRPORT RAILROAD ALL RIGHTS RESERVED.</p>
+	</footer>
+	<!-- footer //-->
+</body>
+</html>

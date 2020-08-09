@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script>
+	function fn_tabAction(classNm){
+		
+	}
+	$( document ).ready(function(){
+		$(".ocrt_sub_tab").click(function(){
+			var f = $(this).siblings();
+			var num = $(this).attr("id");
+			
+			$(f).each(function( index ) {
+				var n = $(this).attr("id");
+				$(this).removeClass("sub_tab_on");
+				$("." + n ).hide();
+			});
+			
+			$(this).addClass("sub_tab_on");
+			$("." + num ).show();
+		});
+	});
+	
+</script>
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<!-- toparea -->
+		<div class="topArea">
+			<div class="wrap">
+				<ul class="fl list">
+					<li class="first"><a href="#">비상연락망</a></li>
+					<li><a href="#">헬프데스크</a></li>
+					<li><a href="#">직원검색</a></li>
+				</ul>
+				<div class="center">
+					<h1><a href="#"><img src="images/main/logo.png" alt="AREX 로고"></a></h1>
+					<div class="search">
+						<form name="searchfrm">
+							<fieldset>
+								<legend>검색</legend>
+									<div class="inputbox">
+										<p class="txt"></p>
+										<select id="search_value">
+											<option>통합검색</option>
+										</select>
+									</div>
+									<label for="search"></label><input type="text" id="search" value="검색어를 입력해주세요">
+									<a href="#" title="입력 검색어로 이동"><img src="images/main/search_icon.png" alt="검색아이콘"></a>
+							</fieldset>
+						</form>
+					</div>
+					<div class="flexslider1">
+						<ul class="content_bannner_list slides">
+							<li>
+								<ul class="search_list">
+									<li><a href="#">턴테이블</a></li>
+									<li><a href="#">내부경영평가</a></li>
+									<li><a href="#">경영평가</a></li>
+									<li><a href="#">운영메뉴얼</a></li>
+									<li><a href="#">2017</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="search_list">
+									<li><a href="#">턴테이블</a></li>
+									<li><a href="#">내부경영평가</a></li>
+									<li><a href="#">경영평가</a></li>
+									<li><a href="#">운영메뉴얼</a></li>
+									<li><a href="#">2017</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="search_list">
+									<li><a href="#">턴테이블</a></li>
+									<li><a href="#">내부경영평가</a></li>
+									<li><a href="#">경영평가</a></li>
+									<li><a href="#">운영메뉴얼</a></li>
+									<li><a href="#">2017</a></li>
+								</ul>
+							</li>
+						  </ul>
+					</div>
+				</div>
+				<div class="fr btn">
+					<p class="user"><em>이승준</em>님</p>
+					<a href="#" class="btn_blue_line"><span class="setting">개인정보</span></a>
+					<a href="#" class="btn_blue_line"><span class="setting">환경설정</span></a>
+					<a href="#" class="btn_darkb_line"><span class="message">CAFE</span></a>
+					<a href="#" class="btn_orange_line"><span class="logout">로그아웃</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- toparea //-->
+		<!-- gnb -->
+		<div id="gnb">
+			<div class="gnb_right"></div>
+			<div class="wrap">
+				<ul class="gnb_left depth01">
+					<li class="first"><a href="#">전자우편</a></li>
+					<li><a href="#">일정관리</a></li>
+					<li><a href="#">협업지원</a></li>
+					<li><a href="#">경영정보</a></li>
+					<li class="depth"><a href="#">e감사</a>
+						<div class="depth02">
+							<ul>
+								<li><a href="#">일상감사</a></li>
+								<li><a href="#">감사계획</a></li>
+								<li><a href="#">감사수행</a></li>
+								<li><a href="#">감사결과</a></li>
+								<li><a href="#">리스크관리</a></li>
+								<li><a href="#">상시모니터</a></li>
+								<li><a href="#">청렴게시판</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="depth"><a href="#">결재업무</a>
+						<div class="depth02">
+							<ul>
+								<li><a href="#">전자결재</a></li>
+								<li><a href="#">기록물철관리</a></li>
+								<li><a href="#">메모보고</a></li>
+								<li><a href="#">웹전자결재</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="depth"><a href="#">사업/과제</a>
+						<div class="depth02">
+							<ul>
+								<li><a href="#">주요 사업/과제</a></li>
+								<li><a href="#">경영층 지시사항</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="depth"><a href="#">전자게시</a>
+						<div class="depth02">
+							<ul>
+								<li><a href="#">게시판</a></li>
+								<li><a href="#">자원신청</a></li>
+								<li><a href="#">비상연락망</a></li>
+								<li><a href="#">홍보콘텐츠</a></li>
+								<li><a href="#">사규&amp;서식 자료실</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">웹오피스</a></li>
+					<li class="depth"><a href="#">지식제안</a>
+						<div class="depth02 right">
+							<ul>
+								<li><a href="#">위키지식</a></li>
+								<li><a href="#">i-톡톡</a></li>
+								<li><a href="#">CoP</a></li>
+								<li><a href="#">토론</a></li>
+								<li><a href="#">설문조사</a></li>
+								<li><a href="#">업무매뉴얼</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">통합자료실</a></li>
+					<li class="depth"><a href="#">업무지원</a>
+						<div class="depth02 right">
+							<ul>
+								<li><a href="#">SW Download</a></li>
+								<li><a href="#">3무 운동 현황</a></li>
+								<li><a href="#">3무 운동 관리</a></li>
+								<li><a href="#">헬프데스크</a></li>
+								<li><a href="#">권한신청</a></li>
+								<li><a href="#">업무일지(전산)</a></li>
+								<li><a href="#">업무일지(유지)</a></li>
+								<li><a href="#">안전경보 현황</a></li>
+								<li><a href="#">안전경보 관리</a></li>
+								<li><a href="#">통통한마당</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="gnb_pattern"></div>
+				<ul class="right_list">
+					<li><a href="javascript:openservice();">서비스 바로가기</a></li>
+					<li><a href="javascript:opensystem();">시스템 맵</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- gnb //-->
+
+	</header>
+	<!-- header //-->	<!-- body -->
+	<div id="body" class="pd40 pdt">
+		<div class="wrap">
+            <div class="cont_top"></div>
+            <div class="cont_bg">
+				<nav>
+					<h2>전자게시</h2>
+					<ul class="depth_01_menu">
+						<li class="down"><a class="depth_01" href="#" title="게시판으로 이동"><span>게시판</span></a>
+							<ul class="depth_02_menu">
+								<li><a href="#" title="공지형 게시판으로 이동">공지형 게시판</a></li>
+								<li><a href="#" title="이미지형게시판으로 이동">이미지형 게시판</a></li>
+								<li><a href="#" title="앨범형게시판으로 이동">앨범형 게시판</a></li>
+							</ul>
+						</li>
+						<li class="left"><a class="depth_01" href="#" title="자원신청으로 이동"><span>자원신청</span></a></li>
+						<li class="left"><a class="depth_01" href="#" title="비상연락망으로 이동"><span>비상연락망</span></a></li>
+						<li class="left"><a class="depth_01" href="#" title="홍보콘텐츠으로 이동"><span>홍보콘텐츠<img class="pd10 pdl" src="images/sub/window_site.gif" alt="연계사이트로 이동 표시 아이콘"></span></a></li>
+						<li class="left on"><a class="depth_01 longmn" href="#" title="자유게시판(익명)으로 이동"><span>사규&amp;서식 자료실</span></a></li>
+					</ul>
+				</nav>
+				<section class="contents">
+					<h3>사규&amp;서식<span>자료실</span></h3>
+					<!-- location -->
+					<ul class="location">
+						<li><img src="images/sub/home_icon.png" alt="home아이콘"></li>
+						<li><a href="#">전자게시</a></li>
+						<li class="here"><a href="#">사규&amp;서식 자료실</a></li>
+					</ul>
+					<!-- location //-->
+					<div id="sub_tab">
+						<ul class="sub_tab ocrt_tab clearfix">
+							<li class="ocrt_sub_tab" id="ocrt_list_tab0"><a href="#org" class="on">정관</a></li>
+							<li class="ocrt_sub_tab" id="ocrt_list_tab1"><a href="#org" class="on">약관</a></li>
+							<li class="ocrt_sub_tab sub_tab_on" id="ocrt_list_tab2"><a href="#org" class="on">규정</a></li>
+							<li class="ocrt_sub_tab" id="ocrt_list_tab3"><a href="#org" class="on">세칙</a></li>
+							<li class="ocrt_sub_tab" id="ocrt_list_tab4"><a href="#org" class="on">강령</a></li>
+							<li class="ocrt_sub_tab" id="ocrt_list_tab5"><a href="#org" class="on">지침</a></li>
+							<li class="ocrt_sub_tab" id="ocrt_list_tab6"><a href="#org" class="on">서식</a></li>
+						</ul>
+						<div class="ocrt_wrap clearfix">
+							<!--정관-->
+							<div class="ocrt_01 ocrt_list_tab0 list">
+								<iframe title="tab_01" src="APT-LNB-008-005_contents.html" style="background-color:#fff; width:100%; height:850px; border:none;" ></iframe>
+							</div>
+							<!--//정관-->
+							<!--약관-->
+							<div class="ocrt_01 ocrt_list_tab1 list none">
+								<iframe title="tab_02" src="APT-LNB-008-005_contents.html" style="background-color:#fff; width:100%; height:850px; border:none;" ></iframe>
+							</div>
+							<!--//약관-->
+							<!--규정-->
+							<div class="ocrt_01 ocrt_list_tab2 list none">
+								<iframe title="tab_03" src="APT-LNB-008-005_contents.html" style="background-color:#fff; width:100%; height:850px; border:none;" ></iframe>
+							</div>
+							<!--//규정-->
+							<!--세칙-->
+							<div class="ocrt_01 ocrt_list_tab3 list none">
+								<iframe title="tab_04" src="APT-LNB-008-005_contents.html" style="background-color:#fff; width:100%; height:850px; border:none;" ></iframe>
+							</div>
+							<!--//세칙-->
+							<!--강령-->
+							<div class="ocrt_01 ocrt_list_tab4 list none">
+								<iframe title="tab_05" src="APT-LNB-008-005_contents.html" style="background-color:#fff; width:100%; height:850px; border:none;" ></iframe>
+							</div>
+							<!--//강령-->
+							<!--지침-->
+							<div class="ocrt_01 ocrt_list_tab5 list none">
+								<iframe title="tab_06" src="APT-LNB-008-005_contents.html" style="background-color:#fff; width:100%; height:850px; border:none;" ></iframe>
+							</div>
+							<!--//지침-->
+							<!--서식-->
+							<div class="ocrt_01 ocrt_list_tab6 list none">
+								<iframe title="tab_07" src="APT-LNB-008-005_contents.html" style="background-color:#fff; width:100%; height:850px; border:none;" ></iframe>
+							</div>
+							<!--//서식-->
+						</div>
+						<!--//ocrt_wrap-->
+					</div>
+					<!-- 탭영역 //-->
+				</section>
+			</div>
+            <div class="cont_bottom"></div>
+		</div>
+	</div>
+	<!-- body //-->
+	<!-- footer -->
+	<footer>
+		<p class="C">COPYRIGHT© 2018 BY AIRPORT RAILROAD ALL RIGHTS RESERVED.</p>
+	</footer>
+	<!-- footer //-->
+</body>
+</html>

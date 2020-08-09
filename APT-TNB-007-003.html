@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<form>
+		<div class="tsearchArea">
+			<div class="format">
+				<div class="inputbox">
+					<p class="txt"></p>
+					<select>
+						<option>2018</option>
+					</select>
+				</div>
+				<a class="btn_search" href="#"><span>검색</span></a> 
+			</div>
+			<div class="fr">
+				<a class="btn_white" href="#"><span class="print">인쇄</span></a><a class="btn_gray" href="#"><span>초기화</span></a><a class="btn_black" href="#"><span>저장</span></a><a class="btn_gray" href="#"><span>삭제</span></a>
+			</div>
+		</div>
+	</form>
+    <!-- table-->
+    <table class="list" >  
+        <caption>게시판쓰기</caption>
+        <colgroup>
+            <col style="width:15%" />
+            <col style="width:30%" />
+            <col style="width:15%" />
+            <col style="width:40%" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <th class="C first th_line"><span class="table_title import">휴일명</span></th>
+                <td class="L td_line" ><label for="title"></label><input type="text" class="txt_100per" id="title" /></td>
+				<th rowspan="2" class="C first th_line"><span class="table_title">비고</span></th>
+				<td rowspan="2" class="L td_line" ><textarea></textarea></td>
+            </tr>
+			<tr>
+                <th class="C first th_line"><span class="table_title import">기간</span></th>
+                <td class="L td_line" ><label for="during"></label><input type="text" class="txt_100per date" id="during" /></td>
+            </tr>
+		</tbody>
+	</table>
+	
+    <!-- table-->
+    <table class="list mr20 mrt table_over">  
+        <caption>게시판리스트</caption>
+        <colgroup>
+            <col style="width:25%" />
+            <col style="width:25%" />
+            <col style="width:50%" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="C first"><span class="table_title">날짜</span></th>
+                <th class="C"><span class="table_title">휴일명</span></th>
+                <th class="C"><span class="table_title">비고</span></th>
+            </tr>
+        </thead>
+        <tbody>   
+            <tr>
+                <td class="C">2018.01.01</td>
+                <td class="C">신정</td>
+                <td class="L">구정 말고 신정</td>
+            </tr>
+            <tr>
+                <td class="C">2018.02.23</td>
+                <td class="C">구정</td>
+                <td class="L">우리나라 고유의 명절</td>
+            </tr>
+			<tr>
+                <td class="C">2018.03.01</td>
+                <td class="C">삼일절</td>
+                <td class="L">3.1 유관순</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table//-->
+    <!-- tcontrol-->
+    <div class="tcontrol">
+        <!-- paging -->
+        <div class="paging">            	
+            <a class="no_bg" href="#" title="처음페이지"><img src="images/sub/btn_arr_first.png" alt="첫 페이지로 이동" /></a> <a class="no_bg" href="#" title="이전페이지"><img src="images/sub/btn_arr_prev.png" alt="이전 페이지로 이동" /></a> <a href="#" class="first">1</a> <a href="#" class="on">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#">8</a> <a href="#">9</a> <a href="#">10</a> <a class="no_bg" href="#"><img src="images/sub/btn_arr_next.png" alt="다음 페이지로 이동" title="다음페이지"/></a> <a class="no_bg" href="#"><img src="images/sub/btn_arr_last.png" alt="마지막 페이지로 이동" title="마지막페이지"/></a>
+        </div>
+        <!-- paging//-->
+    </div>
+    <!-- tcontrol//-->
+</div>
+</body>
+</html>
+
+
+
+

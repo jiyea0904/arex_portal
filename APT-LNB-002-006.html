@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>:: AREX PORTAL SYSTEM ::</title>
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script src="js/jquery.js"></script>
+<script src="js/sub.js"></script>
+</head>
+<!-- 1280*665 -->
+<body class="popup">
+	<h2><span class="title">일정 초대/공유</span></h2>
+    <!-- 전체 영역 -->
+	<div class="popupcontents">
+    	<!-- 왼쪽 영역 //-->
+        <div class="leftArea W35">
+			<div class="contents">
+				<div class="treeArea H1000"></div>
+			</div>
+        </div>
+    	<!-- 왼쪽 영역 //-->
+        <div class="rightArea board W65">
+            <div class="contents">
+                <div class="tsearchArea">
+                    <fieldset class="W100">
+                        <label for="search"></label><input type="text" class="txt_100per" id="search" value="성명을 입력하세요." /><a class="btn_search" href="#"><img src="images/sub/noti_search_icon.png" alt="search" /></a> 
+                    </fieldset>
+                </div>
+				<div class="W100">
+					<div class="fl W45">
+						<!-- table-->
+						<table class="list" >  
+							<caption>부서목록</caption>
+							<colgroup>
+								<col style="width:20%" />
+								<col style="width:80%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="C first"><span class="table_title"><input type="checkbox" id="all_01" name="all" /><label for="all_01"></label></span></th>
+									<th class="L"><span class="table_title">부서목록</span></th>
+								</tr>
+							</thead>
+						</table>
+						<div class="scroll H250">
+							<table class="list" >  
+								<caption>부서목록</caption>
+								<colgroup>
+								<col style="width:20%" />
+								<col style="width:80%" />
+								</colgroup>
+								<tbody>   
+									<tr>
+										<td class="C"><input type="checkbox" id="company_01" name="person" /><label for="company_01"></label></td>
+										<td class="C">통합정보유지보수팀</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="company_02" name="person" /><label for="company_02"></label></td>
+										<td class="C">AFC구축팀</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="company_03" name="person" /><label for="company_03"></label></td>
+										<td class="C">공덕역</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="company_04" name="person" /><label for="company_04"></label></td>
+										<td class="C">홍대입구역</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="company_05" name="person" /><label for="company_05"></label></td>
+										<td class="C">디지털미디어시티역</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- table//-->
+					</div>
+					<!-- btnArea -->
+					<div class="fl W10 C">
+						<div class="btn_move"><a href="#"><img src="images/sub/btn_arr_right.png" alt="오른쪽이동" /></a><a href="#"><img src="images/sub/btn_arr_left.png" alt="왼쪽이동" /></a></div>
+					</div>
+					<!-- btnArea //-->
+					<div class="fl W45">
+						<!-- table-->
+						<table class="list" >  
+							<caption>선택된 부서목록</caption>
+							<colgroup>
+								<col style="width:20%" />
+								<col style="width:80%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="C first"><span class="table_title"><input type="checkbox" id="all_02" name="all" /><label for="all_02"></label></span></th>
+									<th class="L"><span class="table_title">선택된 부서목록</span></th>
+								</tr>
+							</thead>
+						</table>
+						<div class="scroll H250">
+							<table class="list" >  
+								<caption>선택된 부서목록</caption>
+								<colgroup>
+									<col style="width:20%" />
+									<col style="width:80%" />
+								</colgroup>
+								<tbody>   
+									<tr>
+										<td class="C"><input type="checkbox" id="company_11" name="person" /><label for="company_11"></label></td>
+										<td class="C">통합정보유지보수팀</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="company_12" name="person" /><label for="company_12"></label></td>
+										<td class="C">AFC구축팀</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="company_13" name="person" /><label for="company_13"></label></td>
+										<td class="C">공덕역</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="company_14" name="person" /><label for="company_14"></label></td>
+										<td class="C">홍대입구역</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="company_15" name="person" /><label for="company_15"></label></td>
+										<td class="C">디지털미디어시티역</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- table//-->
+					</div>
+				</div>
+				<div class="W100 mr20 mrt">
+					<div class="fl W45">
+						<!-- table-->
+						<table class="list" >  
+							<caption>사용자목록</caption>
+							<colgroup>
+								<col style="width:20%" />
+								<col style="width:80%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="C first"><span class="table_title"><input type="checkbox" id="all_03" name="all" /><label for="all_03"></label></span></th>
+									<th class="L"><span class="table_title">사용자목록</span></th>
+								</tr>
+							</thead>
+						</table>
+						<div class="scroll H250">
+							<table class="list" >  
+								<caption>사용자목록</caption>
+								<colgroup>
+									<col style="width:20%" />
+									<col style="width:40%" />
+									<col style="width:40%" />
+								</colgroup>
+								<tbody>   
+									<tr>
+										<td class="C"><input type="checkbox" id="user_01" name="user" /><label for="user_01"></label></td>
+										<td class="C">조성대</td>
+										<td class="C">서울</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="user_02" name="user" /><label for="user_02"></label></td>
+										<td class="C">윤춘선</td>
+										<td class="C">서울</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="user_03" name="user" /><label for="user_03"></label></td>
+										<td class="C">이경숙</td>
+										<td class="C">서울</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="user_04" name="user" /><label for="user_04"></label></td>
+										<td class="C">이두옥</td>
+										<td class="C">서울</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="user_05" name="user" /><label for="user_05"></label></td>
+										<td class="C">황재선</td>
+										<td class="C">서울</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- table//-->
+					</div>
+					<!-- btnArea -->
+					<div class="fl W10 C">
+						<div class="btn_move"><a href="#"><img src="images/sub/btn_arr_right.png" alt="오른쪽이동" /></a><a href="#"><img src="images/sub/btn_arr_left.png" alt="왼쪽이동" /></a></div>
+					</div>
+					<!-- btnArea //-->
+					<div class="fl W45">
+						<!-- table-->
+						<table class="list" >  
+							<caption>선택된 사용자목록</caption>
+							<colgroup>
+								<col style="width:20%" />
+								<col style="width:80%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="C first"><span class="table_title"><input type="checkbox" id="all_04" name="all" /><label for="all_04"></label></span></th>
+									<th class="L"><span class="table_title">선택된 사용자목록</span></th>
+								</tr>
+							</thead>
+						</table>
+						<div class="scroll H250">
+							<table class="list" >  
+								<caption>선택된 사용자목록</caption>
+								<colgroup>
+									<col style="width:20%" />
+									<col style="width:40%" />
+									<col style="width:40%" />
+								</colgroup>
+								<tbody>   
+									<tr>
+										<td class="C"><input type="checkbox" id="user_11" name="user" /><label for="user_11"></label></td>
+										<td class="C">조성대</td>
+										<td class="C">서울</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="user_12" name="user" /><label for="user_12"></label></td>
+										<td class="C">윤춘선</td>
+										<td class="C">서울</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="user_13" name="user" /><label for="user_13"></label></td>
+										<td class="C">이경숙</td>
+										<td class="C">서울</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="user_14" name="user" /><label for="user_14"></label></td>
+										<td class="C">이두옥</td>
+										<td class="C">서울</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="user_15" name="user" /><label for="user_15"></label></td>
+										<td class="C">황재선</td>
+										<td class="C">서울</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- table//-->
+					</div>
+				</div>
+				<div class="W100 mr20 mrt">
+					<div class="fl W45">
+						<!-- table-->
+						<table class="list" >  
+							<caption>그룹목록</caption>
+							<colgroup>
+								<col style="width:20%" />
+								<col style="width:80%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="C first"><span class="table_title"><input type="checkbox" id="all_05" name="all" /><label for="all_05"></label></span></th>
+									<th class="L"><span class="table_title">그룹목록</span></th>
+								</tr>
+							</thead>
+						</table>
+						<div class="scroll H250">
+							<table class="list" >  
+								<caption>그룹목록</caption>
+								<colgroup>
+									<col style="width:20%" />
+									<col style="width:80%" />
+								</colgroup>
+								<tbody>   
+									<tr>
+										<td class="C"><input type="checkbox" id="group_01" name="group" /><label for="group_01"></label></td>
+										<td class="C">그룹명1</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="group_02" name="group" /><label for="group_02"></label></td>
+										<td class="C">그룹명2</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="group_03" name="group" /><label for="group_03"></label></td>
+										<td class="C">그룹명3</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="group_04" name="group" /><label for="group_04"></label></td>
+										<td class="C">그룹명4</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="group_05" name="group" /><label for="group_05"></label></td>
+										<td class="C">그룹명5</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- table//-->
+					</div>
+					<!-- btnArea -->
+					<div class="fl W10 C">
+						<div class="btn_move"><a href="#"><img src="images/sub/btn_arr_right.png" alt="오른쪽이동" /></a><a href="#"><img src="images/sub/btn_arr_left.png" alt="왼쪽이동" /></a></div>
+					</div>
+					<!-- btnArea //-->
+					<div class="fl W45">
+						<!-- table-->
+						<table class="list" >  
+							<caption>선택된 그룹목록</caption>
+							<colgroup>
+								<col style="width:20%" />
+								<col style="width:80%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="C first"><span class="table_title"><input type="checkbox" id="all_06" name="all" /><label for="all_06"></label></span></th>
+									<th class="L"><span class="table_title">선택된 그룹목록</span></th>
+								</tr>
+							</thead>
+						</table>
+						<div class="scroll H250">
+							<table class="list" >  
+								<caption>선택된 그룹목록</caption>
+								<colgroup>
+									<col style="width:20%" />
+									<col style="width:80%" />
+								</colgroup>
+								<tbody>   
+									<tr>
+										<td class="C"><input type="checkbox" id="group_11" name="group" /><label for="group_11"></label></td>
+										<td class="C">그룹명1</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="group_12" name="group" /><label for="group_12"></label></td>
+										<td class="C">그룹명2</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="group_13" name="group" /><label for="group_13"></label></td>
+										<td class="C">그룹명3</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="group_14" name="group" /><label for="group_14"></label></td>
+										<td class="C">그룹명4</td>
+									</tr>
+									<tr>
+										<td class="C"><input type="checkbox" id="group_15" name="group" /><label for="group_15"></label></td>
+										<td class="C">그룹명5</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- table//-->
+					</div>
+				</div>
+            </div>
+        </div>    
+        <!-- 전체 영역 //-->
+	</div>
+	<!-- btnArea -->
+	<div class="btnArea">
+		<a href="#" class="btn_black"><span>등록</span></a>
+		<a href="#" class="btn_white"><span>닫기</span></a>
+	</div>
+	<!-- btnArea //-->
+	<a href="#"><img class="btn_close" src="images/popup/popup_close.png" alt="닫기" title="닫기" /></a>
+</body>
+</html>
+
+
+
+
+
+
