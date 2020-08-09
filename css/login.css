@@ -14,9 +14,9 @@
 /*loginArea*/
 #login .login_boxing .login_Area{float:left; width:715px; height:622px; background-color:#fff; border:1px solid #19447a; box-sizing:border-box;}
 #login .login_boxing .login_Area h2{height:51px; background:url(../images/login/login_txt.png) no-repeat left center;}
-#login .login_boxing .login_Area h2 span{line-height:75px; font-size:28px; font-family:'Nanum Barun Gothic'; color:#333; padding-left:190px; font-family:'Nanum Barun Gothic'; font-weight:normal;}
-#login .login_boxing .login_Area p.login_title{font-size:18px; font-family:'Nanum Barun Gothic'; color:#333; padding-top:20px;}
-#login .login_boxing .login_Area p.login_title em{color:#0095da; font-family:'Nanum Barun Gothic Bold';}
+#login .login_boxing .login_Area h2 span{line-height:75px; font-size:28px; color:#333; padding-left:190px; font-weight:400; font-weight:normal;}
+#login .login_boxing .login_Area p.login_title{font-size:18px; font-weight:400; color:#333; padding-top:20px;}
+#login .login_boxing .login_Area p.login_title em{color:#0095da; font-weight:500;}
 
 /* login_input */
 #login .login_boxing .login_Area .login_input{padding:55px 0 0 38px;}
@@ -27,7 +27,7 @@
 #login .login_boxing .login_Area .login_input ul li span.pw{float:left; display:inline-block; width:67px; height:21px; line-height:21px; background:url(../images/login/login_password.png) no-repeat left center; padding-left:24px; margin:10px 0 10px 14px; box-sizing:border-box; font-size:16px; color:#888; border-right:1px solid #e5e5e5;}
 #login .login_boxing .login_Area fieldset input[type="text"]{float:left; border:none; display:inline-block; width:210px; padding:0; height:21px; line-height:21px; box-sizing:border-box; margin:10px 0 10px 20px;}
 #login .login_boxing .login_Area fieldset input[type="password"]{float:left; border:none; display:inline-block; width:210px; padding:0; height:21px; line-height:21px; box-sizing:border-box; margin:10px 0 10px 20px; font-family:Dotum}
-#login .login_boxing .login_Area .login_input a{font-size:18px; font-family:'Nanum Barun Gothic Bold'; line-height:24px;}
+#login .login_boxing .login_Area .login_input a{font-size:18px; font-weight:500; line-height:24px;}
 #login .login_boxing .login_Area .login_input .login_btn{height:95px; line-height:95px; background-color:#06326d; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; float:left; box-sizing:border-box;}
 #login .login_boxing .login_Area .login_input .login_btn span{display:inline-block; margin:0 30px; color:#fff; text-align:center;}
 #login .login_boxing .login_Area .login_input .login_reset_btn{height:95px; line-height:95px; background-color:#f68b1d; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; float:left; margin-left:5px; box-sizing:border-box; padding:0 30px;}
@@ -38,26 +38,26 @@
 #login .login_boxing .login_Area .slogan_zone:after{clear:both; display:block; content:"";}
 #login .login_boxing .login_Area .slogan_zone ul{width:644px;}
 #login .login_boxing .login_Area .slogan_zone ul li{width:312px; height:86px; background:#fff; border:1px solid #b9b8b8; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; box-sizing:border-box; float:left; margin:5px;}
-#login .login_boxing .login_Area .slogan_zone ul li span.txt_velue{display: inline-block; font-size:17px; color:#555; font-family:'Nanum Barun Gothic Bold'; height:86px; line-height:24px; margin-top:30px; font-style: italic;}
-#login .login_boxing .login_Area .slogan_zone ul li span.txt_slogan{display: inline-block; font-size:17px; color:#555; font-family:'Nanum Barun Gothic Bold'; height:86px; line-height:24px; margin-top:18px; font-style: italic;}
+#login .login_boxing .login_Area .slogan_zone ul li span.txt_velue{display: inline-block; font-size:17px; color:#555; font-weight:500; height:86px; line-height:24px; margin-top:30px; font-style: italic;}
+#login .login_boxing .login_Area .slogan_zone ul li span.txt_slogan{display: inline-block; font-size:17px; color:#555; font-weight:500; height:86px; line-height:24px; margin-top:18px; font-style: italic;}
 #login .login_boxing .login_Area .slogan_zone ul li span.mission{font-size:17px; color:#333; height:22px; line-height:22px; margin:22px 0 0 20px; float:left; margin-right:20px;}
 #login .login_boxing .login_Area .slogan_zone ul li span.value{font-size:17px; color:#333; height:22px; line-height:22px; margin:32px 0 0 20px; float:left; margin-right:20px;}
 #login .login_boxing .login_Area .slogan_zone ul li span.policy{font-size:17px; color:#333; height:22px; line-height:22px; margin:32px 0 0 20px; float:left; margin-right:22px;}
 #login .login_boxing .login_Area .slogan_zone ul li span.vision{font-size:17px; color:#333; height:22px; line-height:22px; margin:22px 0 0 20px; float:left; margin-right:30px;}
-#login .login_boxing .login_Area .slogan_zone ul li em.txt_blue{font-size:17px; font-family:'Nanum Barun Gothic Bold'; color:#0095da; font-style: italic;}
-#login .login_boxing .login_Area .slogan_zone ul li em.txt_Indigo{font-size:17px; font-family:'Nanum Barun Gothic Bold'; color:#06326d; font-style: italic;}
-#login .login_boxing .login_Area .slogan_zone ul li em.txt_orange{font-size:17px; font-family:'Nanum Barun Gothic Bold'; color:#f68b1d; font-style: italic;}
+#login .login_boxing .login_Area .slogan_zone ul li em.txt_blue{font-size:17px; font-weight:500; color:#0095da; font-style: italic;}
+#login .login_boxing .login_Area .slogan_zone ul li em.txt_Indigo{font-size:17px; font-weight:500; color:#06326d; font-style: italic;}
+#login .login_boxing .login_Area .slogan_zone ul li em.txt_orange{font-size:17px; font-weight:500; color:#f68b1d; font-style: italic;}
 
 /* login_faq */
 #login .login_wrap .login_faq{background:url(../images/login/faq_bg.png) no-repeat right bottom #06326d; width:385px; float:left; height:622px; box-sizing:border-box; padding:0 56px;} 
-#login .login_wrap .login_faq h3{font-size:40px; font-family:'Nanum Barun Gothic Bold'; color:#fff; padding-top:80px; background:url(../images/login/faq_line.png) no-repeat center bottom; padding-bottom:30px; font-weight:normal;}
-#login .login_wrap .login_faq h3 span{font-size:22px; font-family:'Nanum Barun Gothic';}
+#login .login_wrap .login_faq h3{font-size:40px; font-weight:500; color:#fff; padding-top:80px; background:url(../images/login/faq_line.png) no-repeat center bottom; padding-bottom:30px; font-weight:normal;}
+#login .login_wrap .login_faq h3 span{font-size:22px; font-weight:400;}
 #login .login_wrap .login_faq ul{margin-top:30px; box-sizing:border-box; background:url(../images/login/list_line.png) no-repeat 6px 10px;}
 #login .login_wrap .login_faq ul li{line-height:22px; background:url(../images/login/list_off.gif) no-repeat left 2px; height:68px; color:#c3ccd9; font-size:15px;  padding-left:26px;}
 #login .login_wrap .login_faq ul li a{display:block; height:22px; line-height:22px; }
 #login .login_wrap .login_faq ul li a span{float:left; max-width:224px; height:22px; line-height:22px; color:#c3ccd9; font-size:17px; display:inline-block;overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
 #login .login_wrap .login_faq ul li:hover{background:url(../images/login/list_on.gif) no-repeat left 2px;}
-#login .login_wrap .login_faq ul li a:hover span.title{font-family:'Nanum Barun Gothic Bold'; color:#fff;}
+#login .login_wrap .login_faq ul li a:hover span.title{font-weight:500; color:#fff;}
 #login .login_wrap .login_faq ul li a img{float:left; margin:2px 0 0 5px;}
 #login .login_wrap .login_faq ul li span.date{display:block; font-size:15px; height:24px; line-height:24px;}
 

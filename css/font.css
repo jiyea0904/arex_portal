@@ -1,45 +1,57 @@
-/* 
- * Nanum Barun Gothic Web Fonts
- * https://github.com/hiun/NanumBarunGothic
- * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
+@charset "utf-8";
+/* CSS Document */
+
+/*
+* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
  */
  
 @font-face {
-  font-family:'Nanum Barun Gothic Light';
+  font-family: 'Noto Sans KR';
   font-style: normal;
-  font-weight: normal;
-  src: url(../fonts/NanumBarunGothicLight.eot);
-  src: local('Nanum Barun Gothic Light'),
-       local('NanumBarunGothicLight'),
-       url(../fonts/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/NanumBarunGothicLight.woff2) format('woff2'),
-       url(../fonts/NanumBarunGothicLight.woff) format('woff'),
-       url(../fonts/NanumBarunGothicLight.ttf) format('truetype');
+  font-weight: 100;
+  src: local(※), url("../fonts/NotoSansKR-Thin.woff2") format('woff2'),
+       url("../fonts/NotoSansKR-Thin.woff") format('woff'),
+       url("../fonts/NotoSansKR-Thin.otf") format('opentype');
 }
-
 @font-face {
-  font-family:'Nanum Barun Gothic';
+  font-family: 'Noto Sans KR';
   font-style: normal;
-  font-weight: normal;
-  src: url(../fonts/NanumBarunGothic.eot);
-  src: local('Nanum Barun Gothic'),
-       local('NanumBarunGothic'),
-       url(../fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/NanumBarunGothic.woff2) format('woff2'),
-       url(../fonts/NanumBarunGothic.woff) format('woff'),
-       url(../fonts/NanumBarunGothic.ttf) format('truetype');
+  font-weight: 300;
+  src: local(※), url("../fonts/NotoSansKR-Light.woff2") format('woff2'),
+       url("../fonts/NotoSansKR-Light.woff") format('woff'),
+       url("../fonts/NotoSansKR-Light.otf") format('opentype');
 }
-
 @font-face {
-  font-family:'Nanum Barun Gothic Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: url(../fonts/NanumBarunGothicBold.eot);
-  src: local('Nanum Barun Gothic Bold'),
-       local('NanumBarunGothicBold'),
-       url(../fonts/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/NanumBarunGothicBold.woff2) format('woff2'),
-       url(../fonts/NanumBarunGothicBold.woff) format('woff'),
-       url(../fonts/NanumBarunGothicBold.ttf) format('truetype');
-}
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: local(※), url("../fonts/NotoSansKR-Regular.woff2") format('woff2'),
+        url("../fonts/NotoSansKR-Regular.woff") format('woff'),
+        url("../fonts/NotoSansKR-Regular.otf") format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 500;
+   src: local(※), url("../fonts/NotoSansKR-Medium.woff2") format('woff2'),
+        url("../fonts/NotoSansKR-Medium.woff") format('woff'),
+        url("../fonts/NotoSansKR-Medium.otf") format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 700;
+   src: local(※), url("../fonts/NotoSansKR-Bold.woff2") format('woff2'),
+        url("../fonts/NotoSansKR-Bold.woff") format('woff'),
+        url("../fonts/NotoSansKR-Bold.otf") format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 900;
+   src: local(※), url("../fonts/NotoSansKR-Black.woff2") format('woff2'),
+        url("../fonts/NotoSansKR-Black.woff") format('woff'),
+        url("../fonts/NotoSansKR-Black.otf") format('opentype');
+ }
+
 
